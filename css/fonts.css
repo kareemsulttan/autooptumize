@@ -1,0 +1,199 @@
+/* ============================================ *
+ * fonts
+ * ============================================ */
+
+ @font-face {
+  font-family: "Sofia-Pro-Black-Italic";
+  src: url("../fonts/Sofia Pro Black Italic.otf");
+}
+@font-face {
+  font-family: "Sofia-Pro-Black";
+  src: url("../fonts/Sofia Pro Black.otf");
+}
+@font-face {
+  font-family: "Sofia-Pro-Bold-Italic";
+  src: url("../fonts/Sofia Pro Bold Italic.otf");
+}
+@font-face {
+  font-family: "Sofia-Pro-Bold";
+  src: url("../fonts/Sofia Pro Bold.otf");
+}
+@font-face {
+  font-family: "Sofia-Pro-Extra-Light-Italic";
+  src: url("../fonts/Sofia Pro Extra Light Italic.otf");
+}
+@font-face {
+  font-family: "Sofia-Pro-Extra-Light";
+  src: url("../fonts/Sofia Pro Extra Light.otf");
+}
+@font-face {
+  font-family: "Sofia-Pro-Italic";
+  src: url("../fonts/Sofia Pro Italic.otf");
+}
+@font-face {
+  font-family: "Sofia-Pro-Light-Italic";
+  src: url("../fonts/Sofia Pro Light Italic.otf");
+}
+@font-face {
+  font-family: "Sofia-Pro-Light";
+  src: url("../fonts/Sofia Pro Light.otf");
+}
+@font-face {
+  font-family: "Sofia-Pro-Medium-Italic";
+  src: url("../fonts/Sofia Pro Medium Italic.otf");
+}
+@font-face {
+  font-family: "Sofia-Pro-Medium";
+  src: url("../fonts/Sofia Pro Medium.otf");
+}
+@font-face {
+  font-family: "Sofia-Pro-Regular";
+  src: url("../fonts/Sofia Pro Regular.otf");
+}
+@font-face {
+  font-family: "Sofia-Pro-Semi-Bold-Italic";
+  src: url("../fonts/Sofia Pro Semi Bold Italic.otf");
+}
+@font-face {
+  font-family: "Sofia-Pro-Semi-Bold";
+  src: url("../fonts/Sofia Pro Semi Bold.otf");
+}
+@font-face {
+  font-family: "Sofia-Pro-Ultra-Light-Italic";
+  src: url("../fonts/Sofia Pro Ultra Light Italic.otf");
+}
+@font-face {
+  font-family: "Sofia-Pro-Ultra-Light";
+  src: url("../fonts/Sofia Pro Ultra Light.otf");
+}
+.ffMedium {
+  font-family: "Sofia-Pro-Medium", sans-serif;
+}
+.ffMediumItalic {
+  font-family: "Sofia-Pro-Medium-Italic", sans-serif;
+}
+.ffRegular {
+  font-family: "Sofia-Pro-Regular", sans-serif;
+}
+.ffBold {
+  font-family: "Sofia-Pro-Bold", sans-serif;
+}
+.ffBoldItalic {
+  font-family: "Sofia-Pro-Bold-Italic", sans-serif;
+}
+.ffItalic {
+  font-family: "Sofia-Pro-Italic", sans-serif;
+}
+.ffLight {
+  font-family: "Sofia-Pro-Light";
+}
+/*font-weight*/
+
+.fw400 {
+  font-weight: 400;
+}
+.fw600 {
+  font-weight: 600;
+}
+.fw700 {
+  font-weight: 700;
+}
+
+/*font-size*/
+.fs10 {
+  font-size: .625rem
+}
+.fs12 {
+  font-size: .75rem;
+}
+.fs13 {
+  font-size: 0.8125rem;
+}
+.fs14 {
+  font-size: .875rem;
+}
+.fs15 {
+  font-size: .9375rem;
+}
+.fs16 {
+  font-size: 1rem;
+}
+.fs18 {
+  font-size: 1.125rem;
+}
+.fs20 {
+  font-size: 1.25rem;
+}
+.fs22 {
+  font-size: 1.375rem;
+}
+.fs24 {
+  font-size: 1.5rem;
+}
+.fs26 {
+  font-size: 1.625rem;
+}
+.fs28 {
+  font-size: 1.75rem;
+}
+.fs32 {
+  font-size: 2rem;
+}
+.fs44 {
+  font-size: 2.75rem;
+}
+.fs64 {
+  font-size: 4rem;
+  letter-spacing: -0.04em;
+}
+.fs72 {
+  font-size: 4.1rem;
+}
+@media(max-width:767px) {
+  .fsSm12 {
+    font-size: .75rem;
+  }
+  .fsSm13 {
+    font-size: 0.8125rem;
+  }
+  .fsSm14 {
+    font-size: .875rem;
+  }
+  .fsSm15 {
+    font-size: .9375rem;
+  }
+  .fsSm16 {
+    font-size: 1rem;
+  }
+  .fsSm18 {
+    font-size: 1.125rem;
+  }
+  .fsSm20 {
+    font-size: 1.25rem;
+  }
+  .fsSm22 {
+    font-size: 1.375rem;
+  }
+  .fsSm24 {
+    font-size: 1.5rem;
+  }
+  .fsSm26 {
+    font-size: 1.625rem;
+  }
+  .fsSm28 {
+    font-size: 1.75rem;
+  }
+  .fsSm32 {
+    font-size: 2rem;
+  }
+  .fsSm44 {
+    font-size: 2.75rem;
+  }
+  .fsSm64 {
+    font-size: 4rem;
+    letter-spacing: -0.04em;
+  }
+  .fsSm72 {
+    font-size: 4.1rem;
+  }
+}
