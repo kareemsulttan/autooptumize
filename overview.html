@@ -1,0 +1,2482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Overview</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- Bootstrap.css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Fonts.css -->
+  <link rel="stylesheet" href="css/fonts.css">
+  <!--Aos css-->
+  <link rel="stylesheet" href="css/aos.css">
+  <!-- Style.css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--install code modal-->
+<!--   <div class="modal fade installCodeModal" id="installCode" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs14">Install Code Step (1/2)</h5>
+          <button type="button" class="close gray4" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="col-12 bg-white projectsSettingContainer p-0">
+            <div class="mb-2 pt-1">
+              <p class="fs12">Please copy and paste the code into the HEAD section of this page.</p>
+              <a href="#" class="blue fs12">https://navigator.com/</a>     
+              <div class="d-flex mt-2">
+                <button class="btn default-btn transparent d-flex align-items-center blueBtn blue fs12 generalBtn">
+                  <span class="fs22 plusSpan mr-1" style="margin-top: -19px;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></span>
+                  <span style="margin-top: -2px;">How to install the code</span>
+                </button>    
+                <button class="btn default-btn  ml-auto d-flex align-items-center fs12 gray84 generalBtn">
+                  <span class="fs22 plusSpan mr-1" style="margin-top: -21px;"><i class="fa fa-files-o fs14" aria-hidden="true"></i></span>
+                  <span style="margin-top: -2px;">Copy code</span>
+                </button>                 
+              </div>    
+            </div>
+            <form class="pt-1">
+              <div class="form-group mb-2 pt-1">
+                <label for="projecScript" class="fs12 mb-1">Project script</label>
+                <textarea class="form-control fs12" id="projecScript" rows="5" placeholder="Project script"> </textarea>
+              </div>
+            </form>
+            <div class="form-group pt-1">
+              <label for="email" class="fs12 mb-1">Need help? Email instructions to your developer</label>
+              <div class="d-flex">
+                <input type="text" class="form-control fs12 w-50 devEmails mr-2" id="email" placeholder="Developer’s Email Address">
+                <button class="btn btn-primary d-flex align-items-center blueBtn fs12 generalBtn">
+                  <span style="margin-top: -2px;">Send</span>
+                </button>                   
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-primary ml-auto d-flex align-items-center blueBtn fs12 generalBtn" data-toggle="modal" data-target="">
+              <span style="margin-top: -2px;">Test &amp; Continue</span>
+            </button>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+      <!--final step modal-->
+<!--       <div class="modal fade installCodeModal" id="finalStep" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs14">Almost Done! Final Step</h5>
+              <button type="button" class="close gray4" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="bg-white projectsSettingContainer p-0">
+                <form class="pt-1">
+                  <p class="fs12 mb-2">Please enter the URL of Thank You page (after successful conversion):</p>
+                  <div class="form-group mb-3 d-flex justify-content-center align-items-center">
+                    <label for="projectName" class="fs12 col-lg-2 mb-0 p-0">Page URL</label>
+                      <select class="custom-select fs12 col-lg-3 mr-3" id="access" style="height: 32px;">
+                        <option selected="">contains</option>
+                        <option value="1">contains</option>
+                        <option value="2">contains</option>
+                        <option value="3">contains</option>
+                      </select>
+                    <input type="text" class="form-control fs12" id="projectName" placeholder="Project name" value="AutoOptimize Website">
+                  </div>
+                  <div class="d-flex my-2">
+                    <button class="btn default-btn transparent d-flex align-items-center blueBtn blue fs12 generalBtn">
+                      <span class="fs22 plusSpan mr-1" style="margin-top: -19px;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></span>
+                      <span style="margin-top: -2px;">How to install the code</span>
+                    </button>    
+                    <button class="btn default-btn  ml-auto d-flex align-items-center fs12 gray84 generalBtn">
+                      <span class="fs22 plusSpan mr-1" style="margin-top: -21px;"><i class="fa fa-files-o fs14" aria-hidden="true"></i></span>
+                      <span style="margin-top: -2px;">Copy code</span>
+                    </button>                 
+                  </div>  
+                  <div class="form-group mb-0 pt-1">
+                    <textarea class="form-control fs12" id="projecScript" rows="5" placeholder="Project script"> </textarea>
+                  </div>
+                </form>
+                <div class="form-group pt-1">
+                  <label for="email" class="fs12 mb-1">Need help? Email instructions to your developer</label>
+                  <div class="d-flex">
+                    <input type="text" class="form-control fs12 w-50 devEmails mr-2" id="email" placeholder="Developer’s Email Address">
+                    <button class="btn btn-primary d-flex align-items-center blueBtn fs12 generalBtn">
+                      <span style="margin-top: -2px;">Send</span>
+                    </button>                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary ml-auto d-flex align-items-center blueBtn fs12 generalBtn" data-toggle="modal" data-target="">
+                  <span style="margin-top: -2px;">Save</span>
+                </button>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+  <!-- add project Modal -->
+<!--       <div class="modal fade pagesTabModal" id="addProjectModal" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs14">Create New Project</h5>
+              <button type="button" class="close gray4" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body pb-0">
+              <div class="bg-white projectsSettingContainer p-0">
+                <div class="row m-0">
+                  <div class="col-lg-6 pl-lg-0 pr-lg-2">
+                    <form>
+                      <div class="form-group">
+                        <label for="pagetName" class="fs12 mb-1">Project name</label>
+                        <input type="text" class="form-control fs12" id="pageName" placeholder="Draft Project" value="Draft Project">
+                      </div>
+                      <div class="filter level-filter level-req mb-2">
+                        <div id="rangeSlider" class="range-slider">
+                          <div class="range-group">
+                            <label for="number" class="fs12 gray84 mb-0">Traffic Splitting</label>
+                            <input id="range-input" class="range-input" value="50" min="1" max="100" step="1" type="range">
+                          </div>
+                          <div class="number-group d-flex w-100">
+                            <div class="fs12">
+                              <span class="gray64">Control</span>
+                              <span class="testValue">57%</span>
+                            </div>
+                            <div class="fs12 ml-auto">
+                              <span class="gray64">Experiment</span>
+                              <span class="testValue">50%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group pt-1 mb-2">
+                        <label for="message-text" class="fs12">Type of Page</label>
+                        <select class="custom-select fs12" id="access" style="height: 32px;">
+                          <option selected="">Landing Page</option>
+                          <option value="1">Landing Page</option>
+                          <option value="2">Landing Page</option>
+                          <option value="3">Landing Page</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="message-text" class="fs12">Language</label>
+                        <select class="custom-select fs12" id="access" style="height: 32px;">
+                          <option selected="">English</option>
+                          <option value="1">English</option>
+                          <option value="2">English</option>
+                          <option value="3">English</option>
+                        </select>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-lg-6 pr-lg-0 pl-lg-2">
+                    <form>
+                      <div class="form-group">
+                        <label for="pageUrl" class="fs12 mb-1">Project URL</label>
+                        <input type="text" class="form-control fs12" id="pageUrl" placeholder="Project URL" value="https://navigator.com">
+                      </div>
+                      <div class="filter level-filter level-req mb-2">
+                        <div id="rangeSlider" class="range-slider">
+                          <div class="range-group">
+                            <label for="number" class="fs12 gray84 mb-0">Confidence Interval</label>
+                            <input id="range-input2" class="range-input" value="50" min="1" max="100" step="1" type="range">
+                          </div>
+                          <div class="number-group d-flex w-100">
+                            <div class="fs12">
+                              <span class="gray64">Control</span>
+                              <span class="testValue">87%</span>
+                            </div>
+                            <div class="fs12 ml-auto">
+                              <span class="gray64">Experiment</span>
+                              <span class="">100%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group pt-1 mb-2">
+                        <label for="text" class="fs12">Type of Product</label>
+                        <select class="custom-select fs12" id="access" style="height: 32px;">
+                          <option selected="">Digital</option>
+                          <option value="1">Digital</option>
+                          <option value="2">Digital</option>
+                          <option value="3">Digital</option>
+                        </select>
+                      </div>
+                      <div class="form-group mb-2">
+                        <label for="text" class="fs12">Minimum visitors per experiment</label>
+                        <input type="text" class="form-control fs12" id="pageUrl" placeholder="visitors" value="100">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+              <div class="d-flex justify-content-end">
+                <button class="btn default-btn mr-3 d-flex align-items-center fs12 gray84 generalBtn">
+                  <span style="margin-top: -2px;">Cancel</span>
+                </button>
+                <button class="btn btn-primary d-flex align-items-center blueBtn fs12 generalBtn">
+                  <span style="margin-top: -2px;">Update Project</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!--final step2 modal-->
+            <!--final step3 modal-->
+<!--             <div class="modal fade installCodeModal" id="finalStep2" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fs14">Almost Done! Final Step</h5>
+                    <button type="button" class="close gray4" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="bg-white projectsSettingContainer p-0">
+                      <form class="pt-1">
+                        <p class="fs12 mb-2">Please enter the URL of Thank You page (after successful conversion):</p>
+                        <div class="form-group mb-3 d-flex justify-content-center align-items-center">
+                          <label for="projectName" class="fs12 col-lg-2 mb-0 p-0">Page URL</label>
+                            <select class="custom-select fs12 col-lg-3 mr-2" id="access" style="height: 32px;">
+                              <option selected="">event</option>
+                              <option value="1">contains</option>
+                              <option value="2">contains</option>
+                              <option value="3">contains</option>
+                            </select>
+                          <input type="text" class="form-control fs12 mr-2" id="projectName" placeholder="Project name" value="AutoOptimize Website">
+                          <button class="btn btn-primary ml-auto d-flex align-items-center blueBtn fs12 generalBtn" data-toggle="modal" data-target="">
+                            <span style="margin-top: -2px;">Test</span>
+                          </button>
+                        </div>
+                        <div class="d-flex my-2">
+                          <button class="btn default-btn transparent d-flex align-items-center blueBtn blue fs12 generalBtn">
+                            <span class="fs22 plusSpan mr-1" style="margin-top: -19px;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></span>
+                            <span style="margin-top: -2px;">How to install the code</span>
+                          </button>    
+                          <button class="btn default-btn  ml-auto d-flex align-items-center fs12 gray84 generalBtn">
+                            <span class="fs22 plusSpan mr-1" style="margin-top: -21px;"><i class="fa fa-files-o fs14" aria-hidden="true"></i></span>
+                            <span style="margin-top: -2px;">Copy code</span>
+                          </button>                 
+                        </div>  
+                        <div class="form-group mb-0 pt-1">
+                          <textarea class="form-control fs12" id="projecScript" rows="5" placeholder="Project script"> </textarea>
+                        </div>
+                      </form>
+                      <div class="form-group pt-1 mb-0">
+                        <label for="email" class="fs12 mb-1">Need help? Email instructions to your developer</label>
+                        <div class="d-flex">
+                          <input type="text" class="form-control fs12 w-50 devEmails mr-2" id="email" placeholder="Developer’s Email Address">
+                          <button class="btn btn-primary d-flex align-items-center blueBtn fs12 generalBtn">
+                            <span style="margin-top: -2px;">Send</span>
+                          </button>                   
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer border-0 pt-0">
+                    <div class="d-flex justify-content-end">
+                      <button class="btn btn-primary ml-auto d-flex align-items-center blueBtn fs12 generalBtn" data-toggle="modal" data-target="">
+                        <span style="margin-top: -2px;">Save</span>
+                      </button>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+      <!--final step4 modal -->
+      <div class="modal fade installCodeModal" id="finalStep3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs14">Almost Done! Final Step</h5>
+              <button type="button" class="close gray4" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="bg-white projectsSettingContainer p-0">
+                <form class="pt-1">
+                  <p class="fs12 mb-2">Please enter the URL of Thank You page (after successful conversion):</p>
+                  <div class="form-group mb-2 d-flex justify-content-center align-items-center">
+                    <label for="projectName" class="fs12 col-lg-2 mb-0 p-0">Page URL</label>
+                      <select class="custom-select fs12 col-lg-3 mr-2" id="access" style="height: 32px;">
+                        <option selected="">event</option>
+                        <option value="1">contains</option>
+                        <option value="2">contains</option>
+                        <option value="3">contains</option>
+                      </select>
+                    <input type="text" class="form-control fs12 mr-2" id="projectName" placeholder="Project name" value="AutoOptimize Website">
+                    <button class="btn btn-primary ml-auto d-flex align-items-center blueBtn fs12 generalBtn" data-toggle="modal" data-target="">
+                      <span style="margin-top: -2px;">Test</span>
+                    </button>
+                  </div>
+                  <p class="fs12 text-right"><span><i class="fa fa-check positive" aria-hidden="true"></i></span> <span class="positive">Event successfully fired! </span><span> Cart value: <span class="value">$50</span> </span></p>
+                  <div class="d-flex my-2">
+                    <button class="btn default-btn transparent d-flex align-items-center blueBtn blue fs12 generalBtn">
+                      <span class="fs22 plusSpan mr-1" style="margin-top: -19px;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></span>
+                      <span style="margin-top: -2px;">How to install the code</span>
+                    </button>    
+                    <button class="btn default-btn  ml-auto d-flex align-items-center fs12 gray84 generalBtn">
+                      <span class="fs22 plusSpan mr-1" style="margin-top: -21px;"><i class="fa fa-files-o fs14" aria-hidden="true"></i></span>
+                      <span style="margin-top: -2px;">Copy code</span>
+                    </button>                 
+                  </div>  
+                  <div class="form-group mb-0 pt-1">
+                    <textarea class="form-control fs12" id="projecScript" rows="5" placeholder="Project script"> </textarea>
+                  </div>
+                </form>
+                <div class="form-group pt-1 mb-0">
+                  <label for="email" class="fs12 mb-1">Need help? Email instructions to your developer</label>
+                  <div class="d-flex">
+                    <input type="text" class="form-control fs12 w-50 devEmails mr-2" id="email" placeholder="Developer’s Email Address">
+                    <button class="btn btn-primary d-flex align-items-center blueBtn fs12 generalBtn">
+                      <span style="margin-top: -2px;">Send</span>
+                    </button>                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary ml-auto d-flex align-items-center blueBtn fs12 generalBtn" data-toggle="modal" data-target="">
+                  <span style="margin-top: -2px;">Save</span>
+                </button>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            <!-- Modal full screen-->
+<div class="modal fade fullScreenModal p-0" id="fullScreen" tabindex="-1" role="dialog" aria-labelledby="fullScreen" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header p-0 border-0">
+        <!--modal nav-->
+        <nav class="navbar fullScreenModalTopNav fs14 w-100 py-3">
+          <div class="homePageNav ffLight">
+            <span>Home page</span>
+          </div>
+          <div class="controlBtn">
+            <div class="chButton" id="toggleChebx">
+              <input type="checkbox" class="toggleCheckbox w-100 h-100 p-0 m-0" checked>
+              <div class="knobs small-size">
+                <span class="small-size">Control</span>
+              </div>
+            </div>  
+          </div>
+          <div class="closeBtn">
+            <button type="button" class="close fw400 fs12 ffLight defaultOpacity py-2 px-0 m-0 d-flex align-items-center" data-dismiss="modal" aria-label="Close">
+              <span class="fs22 mr-1" aria-hidden="true" style="margin-top: -1px;">&times;</span>
+              <span> Close</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div class="modal-body p-0">
+        <img class="w-100" src="assets/webPlaceholder.png" alt="webPlaceholder">
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Modal add page -->
+  <div class="modal fade pagesTabModal" id="addPageModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs14">Add New Page</h5>
+          <button type="button" class="close gray4" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="recommendedContainer mb-1">
+            <h3 class="fs12">Experiment type</h3>
+            <div id="recommended" class="d-flex recommended p-2 mt-2">
+              <div class="ml-2">
+                <p class="fs12">Optimize a page (recommended)</p>
+                <p class="gray84 fs12">Convert traffic to customers at the highest possible rate</p>                
+              </div>
+            </div>
+          </div>
+          <div class="recommendedContainer">
+            <div id="splitTest" class="d-flex recommended split p-2 mt-2">
+              <div class="ml-2">
+                <p class="fs12">Split test different URLs</p>
+                <p class="gray84 fs12">Testing completely different page designs? Do this first.</p>                
+              </div>
+            </div>
+          </div>
+          <div class="typeUrl mt-2">
+            <label for="url" class="fs12 gray">Page URL</label>
+            <input type="text" class="form-control fs12 p-2 w-100" placeholder="Page URL that you’d like to optimize">
+          </div>
+          <div class="splitUrl mt-2">
+            <label for="url" class="fs12 gray">Page #1 URL</label>
+            <input type="text" class="form-control fs12 p-2 w-100" placeholder="Page URL that you’d like to optimize">
+            <label for="url" class="fs12 gray">Page #2 URL</label>
+            <input type="text" class="form-control fs12 p-2 w-100 mb-2" placeholder="Page URL that you’d like to optimize">
+            <a href="#" class="blue fs12">+ Add another split test page URL</a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary fs12 blueBtn generalBtn" disabled>Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--add colla-->
+  <div class="modal fade" tabindex="-1" role="dialog" id="addCollaborators" aria-labelledby="addCollaborators" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs14">Add Collaborators</h5>
+          <button type="button" class="close gray4" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="row align-items-center mb-2">
+            <div class="form-group col-8 mb-0">
+              <label for="email" class="fs12">Enter email</label>
+              <input type="email" class="form-control fs12" id="email" placeholder="Email address">
+            </div>
+            <div class="form-group col-4 mb-0 pl-0">
+              <label for="message-text" class="fs12">Access</label>
+              <select class="custom-select fs12" id="access" style="height: 32px;">
+                <option selected>Editor</option>
+                <option value="1">Editor1</option>
+                <option value="2">Editor2</option>
+                <option value="3">Editor3</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-primary fs12 blueBtn generalBtn" disabled>Invite</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--sidebar-->
+  <div id="collapsedNav" class="navbar-collapse offcanvas-collapse grayBg">
+    <div class="logoContainer d-flex grayBg">
+      <!--toggle menu-->
+      <button class="navbar-toggler transparent border-0 collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span id="hamburger"><span></span></span>
+      </button>
+      <!--logo-->
+      <a class="navbar-brand d-flex align-items-center m-0 p-0" href="projects.html">
+        <div class="brandContainer">
+          <svg width="136" height="20" viewBox="0 0 136 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.87251 15.0881C10.0487 15.5727 10.5113 15.859 10.9959 15.859C11.15 15.859 11.3042 15.837 11.4144 15.793C12.0531 15.5507 12.3615 14.8458 12.1412 14.207L7.27338 1.23348C7.07515 0.748898 6.61259 0.440528 6.10598 0.462554C5.6214 0.440528 5.13682 0.748898 4.93858 1.23348L0.0707392 14.207C-0.149525 14.8458 0.158845 15.5507 0.797612 15.793C0.92977 15.837 1.06193 15.859 1.21611 15.859C1.7007 15.859 2.16325 15.5727 2.36149 15.0881L3.44078 12.2247H8.79321L9.87251 15.0881ZM4.32184 9.80176L6.10598 5.06608L7.89012 9.80176H4.32184Z" fill="white" />
+            <path d="M22.6196 11.2775V6.01322C22.6196 5.39648 22.0469 4.84582 21.4302 4.84582C20.7694 4.84582 20.2848 5.39648 20.2848 6.01322V11.2775C20.2628 12.533 19.2496 13.5242 17.972 13.5242C16.7165 13.5242 15.7253 12.533 15.7253 11.2775V6.01322C15.7253 5.39648 15.2187 4.84582 14.5579 4.84582C13.9192 4.84582 13.3905 5.39648 13.3905 6.01322V11.2775C13.3905 13.7885 15.461 15.859 17.972 15.859C20.5051 15.859 22.6196 13.7885 22.6196 11.2775Z" fill="white" />
+            <path d="M29.7404 4.84582H29.1897V1.65198C29.1897 0.969162 28.6611 0.440528 27.9782 0.440528C27.2954 0.440528 26.7448 0.969162 26.7448 1.65198V4.84582H26.106C25.4232 4.84582 24.8945 5.37445 24.8945 6.05727C24.8945 6.71806 25.4232 7.26872 26.106 7.26872H26.7448V13.4141C26.7448 14.7577 27.8461 15.859 29.1897 15.859C29.8725 15.859 30.4011 15.3304 30.4011 14.6476C30.4011 13.9648 29.8725 13.4141 29.1897 13.4141V7.26872H29.7404C30.4011 7.26872 30.9738 6.71806 30.9738 6.05727C30.9738 5.37445 30.4011 4.84582 29.7404 4.84582Z" fill="white" />
+            <path d="M38.2148 15.9251C39.6686 15.9251 40.9902 15.2863 41.8933 14.2511C42.8845 13.2819 43.4351 11.9163 43.4351 10.3745C43.4351 8.87665 42.8845 7.57709 41.8933 6.51982C40.9902 5.48458 39.6686 4.84582 38.2148 4.84582C36.695 4.84582 35.4175 5.48458 34.4263 6.51982C33.4792 7.57709 32.9065 8.87665 32.9065 10.3745C32.9065 11.9163 33.4792 13.2819 34.4263 14.2511C35.4175 15.2863 36.695 15.9251 38.2148 15.9251ZM36.1003 8.0837C36.651 7.59912 37.3778 7.2467 38.2148 7.2467C38.9858 7.2467 39.6906 7.59912 40.2413 8.0837C40.7919 8.67841 41.1003 9.47137 41.1003 10.3745C41.1003 11.3216 40.7919 12.0925 40.2413 12.7093C39.6906 13.2379 38.9858 13.5242 38.2148 13.5242C37.3778 13.5242 36.651 13.2379 36.1003 12.7093C35.5937 12.0925 35.3074 11.3216 35.3074 10.3745C35.3074 9.47137 35.5937 8.67841 36.1003 8.0837Z" fill="white" />
+            <path d="M53.2149 0C51.1003 0 49.162 0.903084 47.8184 2.35683C46.4527 3.81057 45.6378 5.7489 45.6378 7.92952C45.6378 10.1101 46.4527 12.0705 47.8184 13.5022C49.162 14.9339 51.1003 15.859 53.2149 15.859C55.2413 15.859 57.1796 14.9339 58.4792 13.5022C59.8448 12.0705 60.7038 10.1101 60.7038 7.92952C60.7038 5.7489 59.8448 3.81057 58.4792 2.35683C57.1796 0.903084 55.2413 0 53.2149 0ZM56.695 11.7621C55.7699 12.7533 54.5364 13.348 53.2149 13.348C51.8052 13.348 50.5717 12.7533 49.6466 11.7621C48.7215 10.815 48.1488 9.42731 48.1488 7.92952C48.1488 6.43172 48.7215 5.04405 49.6466 4.07489C50.5717 3.0837 51.8052 2.51101 53.2149 2.51101C54.5364 2.51101 55.7699 3.0837 56.695 4.07489C57.5981 5.04405 58.1928 6.43172 58.1928 7.92952C58.1928 9.42731 57.5981 10.815 56.695 11.7621Z" fill="white" />
+            <path d="M64.8582 20C65.5631 20 66.1137 19.4273 66.1137 18.8106V14.9339C66.9067 15.5066 67.964 15.837 69.0653 15.837C71.9948 15.837 74.3957 13.3921 74.3957 10.3745C74.3957 7.35683 71.9948 4.84582 69.0653 4.84582C67.9419 4.84582 66.8847 5.22026 66.0697 5.7489C65.9816 5.26432 65.475 4.84582 64.8582 4.84582C64.2195 4.84582 63.6908 5.37445 63.6908 6.01322V10.3745C63.6908 10.3965 63.6908 10.3965 63.6908 10.3965V18.8106C63.6908 19.4273 64.2195 20 64.8582 20ZM66.9728 8.14978C67.5234 7.55507 68.2503 7.2467 69.0653 7.2467C69.8142 7.2467 70.5631 7.55507 71.1358 8.14978C71.6424 8.72247 71.9948 9.51542 71.9948 10.3745C71.9948 11.2335 71.6424 12.0705 71.1358 12.5771C70.5631 13.1938 69.8142 13.5022 69.0653 13.5022C68.2503 13.5022 67.5234 13.1938 66.9728 12.5771C66.4001 12.0705 66.1137 11.2335 66.1137 10.3745C66.1137 9.51542 66.4001 8.72247 66.9728 8.14978Z" fill="white" />
+            <path d="M80.8529 4.84582H80.3022V1.65198C80.3022 0.969162 79.7736 0.440528 79.0908 0.440528C78.4079 0.440528 77.8573 0.969162 77.8573 1.65198V4.84582H77.2185C76.5357 4.84582 76.007 5.37445 76.007 6.05727C76.007 6.71806 76.5357 7.26872 77.2185 7.26872H77.8573V13.4141C77.8573 14.7577 78.9586 15.859 80.3022 15.859C80.985 15.859 81.5137 15.3304 81.5137 14.6476C81.5137 13.9648 80.985 13.4141 80.3022 13.4141V7.26872H80.8529C81.5137 7.26872 82.0863 6.71806 82.0863 6.05727C82.0863 5.37445 81.5137 4.84582 80.8529 4.84582Z" fill="white" />
+            <path d="M86.0597 4.86784C85.3989 4.86784 84.8703 5.37445 84.8703 6.0793V14.6696C84.8703 15.3304 85.3989 15.859 86.0597 15.859C86.7425 15.859 87.2491 15.3304 87.2491 14.6696V6.0793C87.2491 5.37445 86.7425 4.86784 86.0597 4.86784ZM87.2491 1.62996C87.2491 0.969162 86.7425 0.440528 86.0597 0.440528C85.3989 0.440528 84.8703 0.969162 84.8703 1.62996V2.09251C84.8703 2.7533 85.3989 3.30396 86.0597 3.30396C86.7425 3.30396 87.2491 2.7533 87.2491 2.09251V1.62996Z" fill="white" />
+            <path d="M101.44 7.20264C102.651 7.20264 103.664 8.21586 103.664 9.47137V14.6916C103.664 15.3304 104.215 15.859 104.854 15.859C105.493 15.859 106.021 15.3304 106.021 14.6916V9.47137C106.021 6.9163 103.973 4.84582 101.44 4.84582C100.052 4.84582 98.7965 5.4185 97.9815 6.36564C97.1445 5.4185 95.911 4.84582 94.5234 4.84582C93.6864 4.84582 92.8714 5.08811 92.1665 5.50661C91.9903 5.08811 91.5718 4.84582 91.1093 4.84582C90.4705 4.84582 89.9419 5.35242 89.9419 6.03524V9.44934C89.9419 9.44934 89.9419 9.44934 89.9419 9.47137V14.6916C89.9419 15.2643 90.3604 15.7048 90.889 15.837C90.9551 15.837 91.0212 15.859 91.1093 15.859C91.5718 15.859 92.0124 15.5507 92.2106 15.1542C92.2106 15.1101 92.2106 15.0661 92.2106 15.0441C92.2547 15 92.2546 14.9559 92.2767 14.9119C92.2767 14.9119 92.2767 14.8678 92.2767 14.8458C92.2767 14.8018 92.2987 14.7357 92.2987 14.6916V9.47137C92.2987 8.21586 93.3119 7.20264 94.5234 7.20264C95.7569 7.20264 96.7701 8.19383 96.7921 9.40529C96.7921 9.42731 96.7921 9.44934 96.7921 9.47137V14.6916C96.7921 15.3304 97.3648 15.859 97.9815 15.859C98.6203 15.859 99.1489 15.3304 99.1489 14.6916V9.47137C99.1489 9.44934 99.1489 9.42731 99.1489 9.40529C99.193 8.19383 100.184 7.20264 101.44 7.20264Z" fill="white" />
+            <path d="M111.003 4.86784C110.342 4.86784 109.813 5.37445 109.813 6.0793V14.6696C109.813 15.3304 110.342 15.859 111.003 15.859C111.686 15.859 112.192 15.3304 112.192 14.6696V6.0793C112.192 5.37445 111.686 4.86784 111.003 4.86784ZM112.192 1.62996C112.192 0.969162 111.686 0.440528 111.003 0.440528C110.342 0.440528 109.813 0.969162 109.813 1.62996V2.09251C109.813 2.7533 110.342 3.30396 111.003 3.30396C111.686 3.30396 112.192 2.7533 112.192 2.09251V1.62996Z" fill="white" />
+            <path d="M122.638 6.67401C122.682 6.65198 122.704 6.60793 122.749 6.56388C122.749 6.51982 122.749 6.4978 122.749 6.4978C122.793 6.47577 122.815 6.43172 122.815 6.38767C122.837 6.34361 122.837 6.29956 122.837 6.27753C122.859 6.23348 122.859 6.21145 122.859 6.14537C122.859 6.14537 122.859 6.0793 122.881 6.03524V6.01322C122.881 5.99119 122.859 5.94714 122.859 5.92511C122.859 5.88106 122.859 5.837 122.859 5.79295C122.837 5.77093 122.837 5.72687 122.815 5.68282C122.815 5.63877 122.815 5.59471 122.793 5.57269C122.793 5.52863 122.749 5.50661 122.749 5.44053C122.704 5.44053 122.704 5.4185 122.682 5.39648C122.66 5.37445 122.638 5.35242 122.616 5.30837C122.594 5.28634 122.572 5.24229 122.55 5.24229C122.506 5.17621 122.462 5.15418 122.44 5.13216C122.44 5.11013 122.418 5.08811 122.396 5.08811C122.396 5.08811 122.396 5.06608 122.374 5.06608C122.33 5.04405 122.286 5 122.242 5C122.22 5 122.198 4.95595 122.176 4.93392C122.154 4.93392 122.11 4.91189 122.066 4.91189C122.044 4.88987 122 4.88987 121.956 4.86784C121.912 4.86784 121.912 4.86784 121.845 4.86784C121.801 4.86784 121.757 4.84582 121.713 4.84582H115.348C114.731 4.84582 114.18 5.37445 114.18 6.01322C114.18 6.67401 114.731 7.18062 115.348 7.18062H119.378L114.423 14.0308C114.423 14.0308 114.423 14.0308 114.401 14.0308C114.378 14.0529 114.334 14.0969 114.334 14.141C114.334 14.141 114.29 14.207 114.268 14.207C114.268 14.2291 114.246 14.2731 114.246 14.3172C114.224 14.3612 114.224 14.4053 114.202 14.4273C114.202 14.4714 114.202 14.4934 114.202 14.5154C114.202 14.5595 114.18 14.6256 114.18 14.6696C114.18 14.6916 114.18 14.6916 114.18 14.6916C114.18 14.7137 114.18 14.7357 114.202 14.7577C114.202 14.8018 114.202 14.8678 114.202 14.9119C114.202 14.9339 114.224 14.978 114.224 15C114.246 15.0661 114.246 15.1101 114.268 15.1101C114.268 15.1762 114.29 15.1982 114.334 15.2203C114.334 15.2643 114.334 15.2863 114.378 15.3084C114.401 15.3304 114.423 15.3524 114.445 15.3965C114.467 15.4185 114.489 15.4405 114.533 15.5066C114.533 15.5066 114.599 15.5507 114.621 15.5727C114.643 15.5947 114.665 15.6167 114.687 15.6167C114.687 15.6388 114.687 15.6388 114.709 15.6388C114.709 15.6608 114.731 15.6608 114.753 15.7048C114.775 15.7048 114.819 15.7489 114.841 15.7489C114.863 15.7709 114.885 15.7709 114.929 15.793C114.973 15.793 115.017 15.815 115.061 15.837C115.083 15.837 115.105 15.837 115.127 15.837C115.215 15.859 115.282 15.859 115.348 15.859H121.713C122.33 15.859 122.881 15.3304 122.881 14.6916C122.881 14.0308 122.33 13.5242 121.713 13.5242H117.66L122.638 6.69604C122.638 6.67401 122.638 6.67401 122.638 6.67401Z" fill="white" />
+            <path d="M130.261 15.859C131.825 15.859 133.124 15.3965 134.204 14.4053C134.71 13.9427 134.49 13.2819 134.204 12.9736C133.917 12.6211 133.014 12.5551 132.552 13.0396C132.001 13.4582 131.054 13.6564 130.261 13.5903C129.49 13.5242 128.609 13.1278 128.146 12.5991C127.75 12.2247 127.508 11.652 127.397 11.1454H134.402C135.019 11.1454 135.481 10.793 135.547 10.2643C135.569 10.2203 135.569 10.1101 135.569 10.0661C135.569 10.022 135.569 9.97797 135.569 9.95595C135.393 6.98238 133.124 4.84582 130.261 4.84582C127.243 4.84582 124.909 7.35683 124.886 10.3524C124.909 13.348 127.243 15.837 130.261 15.859ZM130.261 6.93833C132.177 7.09251 133.301 8.39207 133.521 9.27313H127.287C127.464 8.37004 128.389 7.02643 130.261 6.93833Z" fill="white" />
+          </svg>
+        </div>
+      </a>
+    </div>
+    <ul class="navbar-nav w-100 p-0 mt-3">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="18" height="18" rx="5" stroke="white" stroke-width="2" />
+          </svg>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="18" height="18" rx="5" stroke="white" stroke-width="2" />
+          </svg>
+          <span>Projects</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="18" height="18" rx="5" stroke="white" stroke-width="2" />
+          </svg>
+          <span>Reports</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="18" height="18" rx="5" stroke="white" stroke-width="2" />
+          </svg>
+          <span>Settings</span>
+        </a>
+      </li>
+      <li class="nav-item mb-0">
+        <a class="nav-link nav-link-collapse" href="#" id="hasSubItems" data-toggle="collapse" data-target="#collapseSubItems" aria-controls="collapseSubItems" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="18" height="18" rx="5" stroke="white" stroke-width="2" />
+          </svg>
+          <span>Groups</span>
+        </a>
+        <!--submenu-->
+        <ul class="nav-second-level collapse" id="collapseSubItems" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Candor Corp</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Vortex Solar</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Bonefete Fun</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border-bottom-0" href="#">
+              <span class="nav-link-text">Quad Goals</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!--log out-->
+    <ul class="navbar-nav logOut w-100 mb-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="18" height="18" rx="5" stroke="white" stroke-width="2" />
+          </svg>
+          <span>Log Out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!--app content-->
+  <div id="content" class="app overview p-3 px-sm-4 position-relative leftSpace">
+    <!--nav container-->
+    <div id="navContainer" class="bg-white d-flex fixed-top pt-4 leftNavSpace">
+      <!--right nav-->
+      <nav class="navbar w-100 py-0 px-4 rightNav bg-white">
+        <!--mobile toggle menu-->
+        <button class="navbar-toggler transparent border-0 collapsed mr-3 d-md-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="hamburger"><span></span></span>
+        </button>
+        <div class="mainTitle leftNavSide">
+          <i class="fa fa-file-text-o fs20 d-lg-block d-none" aria-hidden="true"></i>
+          <h2 class="fs18 fsSm12 d-block"><span class="gray64 mr-2">Projects</span> <span class="mr-1">/</span> <span class="d-block d-lg-inline">AutoOptimize Website</span></h2>
+        </div>
+        <div class="ml-auto rightNavSide mail">
+          <!--mobile dropdown menu-->
+          <div class="dropdown d-md-none">
+            <button class="btn p-0 transparent" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-menu px-2" aria-labelledby="dropdownMenu2">
+              <i class="fa fa-bell-o fs13 fw600" aria-hidden="true"></i>
+              <span class="fs12 ml-3 mr-1">johndoe@mail.com</span>
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="mailContainer d-none d-md-flex align-items-center position-relative">
+            <div class="position-relative">
+              <div class="position-absolute total_notifications align-center d-flex justify-content-center align-items-center">
+                <span class="notify_number fs10 whiteColor">10</span>
+              </div>
+              <button class="btn default-btn transparent border-0 p-0" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell-o fs13 fw600" aria-hidden="true"></i></button>    
+              <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown notificationsContainer" aria-labelledby="notifications">
+                <a class="dropdown-item fs12" href="#">You have (10) notifications</a>
+                <a class="dropdown-item fs12" href="#">notifications</a>
+                <a class="dropdown-item fs12" href="#">notifications</a>
+                <a class="dropdown-item fs12" href="#">notifications</a>
+                <a class="dropdown-item fs12" href="#">notifications</a>
+                <a class="dropdown-item fs12" href="#">notifications</a>
+                <a class="dropdown-item fs12" href="#">notifications</a>
+                <a class="dropdown-item fs12" href="#">notifications</a>
+              </div>   
+            </div>
+            <span class="fs12 ml-3 mr-2">johndoe@mail.com</span>
+            <div>
+              <button class="btn default-btn transparent border-0 p-0" id="sett" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+              <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown userSettings" aria-labelledby="sett">
+                <a class="dropdown-item fs12" href="#">Settings</a>
+                <a class="dropdown-item fs12" href="#">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="avaDesContainer" class="w-100">
+          <div class="description mt-3 fs14 pt-1 d-none d-lg-block w-100">
+            <span class="addDescription gray64 mr-1"><i class="fa fa-pencil fs18 mr-1" aria-hidden="true"></i> Add description to this project...</span>
+          </div>
+          <div class="avatarsContainer mt-2 pl-1 d-none d-lg-flex w-100">
+            <span class="avatar">JD</span>
+            <span class="avatar">JD</span>
+            <span class="avatar">JD</span>
+            <span class="avatar">JD</span>
+            <span class="avatar">JD</span>
+          </div>          
+        </div>
+        <!--tabs container-->
+        <div class="tabsContainer mt-2 w-100">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs border-0">
+            <li class="nav-item">
+              <a class="nav-link pl-2 active" data-toggle="tab" href="#overview">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#pages">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#collaborators">Collaborators</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#report">Report</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#settings">Project Settings</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="tab-content">
+      <div id="overview" class="tab-pane pt-2 active">
+        <div class="container-fluid">
+          <!--first row-->
+          <div class="row" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
+            <div class="col-6 col-lg-3 mb-4">
+              <div class="cellContainer">
+                <p class="gray64 fs12">Status</p>
+                <h2 class="align-items-center blackColor d-flex fs18 mt-2">
+                  <div class="perCirc progressPercent mr-2" data-percent="60">
+                    <div class="perCircInner">
+                      <div class="perCircStat"></div>
+                    </div>
+                  </div>
+                  In Progress
+                </h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-1">
+                <p class="gray64 fs12">Duration</p>
+                <h2 class="fs18 blackColor mt-2">16d 12h 47m</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4">
+              <div class="cellContainer ml-lg-1 pl-lg-2">
+                <p class="gray64 fs12">Start</p>
+                <h2 class="fs18 blackColor mt-2">Nov 27, 2020</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-3">
+                <p class="gray64 fs12">End</p>
+                <h2 class="fs18 blackColor mt-2">Dec 12, 2020</h2>
+              </div>
+            </div>
+          </div>
+          <!--second row-->
+          <div class="row" data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
+            <div class="col-6 col-lg-3 mb-4">
+              <div class="cellContainer">
+                <p class="gray64 fs12">Total visitors</p>
+                <h2 class="align-items-center blackColor d-flex fs18 mt-2">5,291</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-1">
+                <p class="gray64 fs12">Control conversions</p>
+                <h2 class="fs18 blackColor mt-2">5,291</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4">
+              <div class="cellContainer ml-lg-1 pl-lg-2">
+                <p class="gray64 fs12">Experiment conversions</p>
+                <h2 class="fs18 blackColor mt-2">5,291</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-3">
+                <p class="gray64 fs12">Total improvement</p>
+                <h2 class="fs18 blackColor mt-2 fw600 positive"><span><i class="fa positive fa-arrow-up" aria-hidden="true"></i></span> 598%</h2>
+              </div>
+            </div>
+          </div>
+          <!--third row-->
+          <div class="row mb-3 pb-3 mobBorder" data-aos="fade-up" data-aos-once="true" data-aos-delay="500">
+            <div class="col-6 col-lg-3">
+              <div class="cellContainer">
+                <p class="gray64 fs12">Total pages</p>
+                <h2 class="align-items-center blackColor d-flex fs18 mt-2">5</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-1">
+                <p class="gray64 fs12">Total experiments</p>
+                <h2 class="fs18 blackColor mt-2">8</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="cellContainer ml-lg-1 pl-lg-2">
+                <p class="gray64 fs12">Options tested</p>
+                <h2 class="fs18 blackColor mt-2">16</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-3">
+                <p class="gray64 fs12">Most impactful</p>
+                <h2 class="fs18 blackColor mt-2">Headline <span class="positive d-inline-block fw600"><i class="fa positive fa-arrow-up" aria-hidden="true"></i> 598%</span></h2>
+              </div>
+            </div>
+          </div>
+          <!--table-->
+          <div class="row" data-aos="fade-up" data-aos-once="true" data-aos-delay="700">
+            <div class="mainTable overviewTable">
+              <table class="col-md-12 table-bordered">
+              <thead>
+                <tr class="fs12 gray64 grayE7Bg">
+                  <th class="page">Page</th>
+                  <th class="experiments">Experiments</th>
+                  <th class="visitors">Visitors</th>
+                  <th class="improvement">Improvement</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="leftMobileColumn mainTableTitle" data-title="Pages: ">
+                    <p>Homepage <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+                    <p class="gray64">www.navigator.com</p>
+                    <p class="positive">Completed</p>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn" data-title="Experiments: 4">
+                    <span>4</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn" data-title="Visitors: 3,291" class="numeric">
+                    <span>3,291</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn" data-title="improvement: +372%" class="numeric">
+                    <span class="positive">+372%</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="leftMobileColumn">
+                    <p>Pricing <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+                    <p class="gray64">/pricing</p>
+                    <p class="blue">In Progress</p>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn" data-title="Experiments: 3">
+                    <span>3</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn" data-title="Visitors: 3,291" class="numeric">
+                    <span>3,291</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn" data-title="improvement: +372%" class="numeric">
+                    <span class="positive">
+                      <span>+372%</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="leftMobileColumn">
+                    <p>About Us <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+                    <p class="gray64">/about-us</p>
+                    <p class="warning">Queued</p>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn" data-title="Experiments: 2">
+                    <span>2</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn" data-title="Visitors: 3,291" class="numeric">
+                    <span>3,291</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn" data-title="improvement: +372%" class="numeric">
+                    <span class="positive">
+                      <span>+372%</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="leftMobileColumn">
+                    <p>Contact <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+                    <p class="gray64">/contact</p>
+                    <p class="gray64">No experiments</p>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn" data-title="Experiments: 0">
+                    <span>0</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn" data-title="Visitors: 3,291" class="numeric">
+                    <span>3,291</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn" data-title="improvement: +372%" class="numeric">
+                    <span class="positive">
+                      <span>+372%</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="leftMobileColumn">
+                    <p>Features <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+                    <p class="gray64">/features</p>
+                    <p class="gray84"><i class="fa fa-exclamation-triangle mr-2 nigative" aria-hidden="true"></i> Code not detected</p>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn" data-title="Experiments: 3">
+                    <span>3</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn" data-title="Visitors: 3,291" class="numeric">
+                    <span>3,291</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn" data-title="improvement: +372%" class="numeric">
+                    <span class="positive">
+                      <span>+372%</span>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div id="pages" class="tab-pane fade">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 col-xl-3 px-0 pr-lg-1 mobileCollapseContainer mt-1">
+              <!--search pages number container-->
+              <div class="mobileLeftTableCollapse d-sm-none d-flex align-items-center">
+                <div class="firstTableData fs12">
+                  <p>Homepage</p>
+                  <p class="positive">Completed</p>
+                </div>
+                <button class="btn collapseBtn pr-0 ml-auto gray generalBtn transparent fs18 py-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <i id="MobileToggleArrow" class="fa fa-angle-down" aria-hidden="true"></i>
+                </button>                
+              </div>
+              <div class="w-100 leftSideContainer" id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="d-none d-sm-block pl-4 pr-3 pt-3">
+                  <div class="projectsNumbre mb-2 pb-1">
+                    <h2 class="fs18 fsSm12 mr-auto"><span class="number">5 </span>Pages</h2>
+                    <button class="btn default-btn transparent d-flex align-items-center fs12 blue ffLight blueBtn generalBtn ml-auto ml-md-0 noSmBorder noSmPadding" data-toggle="modal" data-target="#addPageModal">
+                      <span class="fs22 plusSpan mr-1" style="margin-top: -19px;">+</span>
+                      <span style="margin-top: -2px;">Add page</span>
+                    </button>
+                  </div>
+                  <div class="searchContainer w-100 mb-0">
+                    <div class="form-group has-search mb-0 position-relative">
+                      <span class="fa fa-search form-control-feedback fs13 ml-3 fs12"></span>
+                      <input type="text" class="form-control fs12 grayFABgColor" placeholder="Search">
+                    </div>
+                  </div>                
+                </div>   
+                <!--table-->    
+                <div class="mainTable leftSidePageTable">
+                  <table class="w-100">
+                  <thead>
+                    <tr class="fs12 gray grayE7Bg">
+                      <th>Page</th>
+                      <th>Experiments/Imrpovement</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="activeTr">
+                      <td>
+                        <p>Homepage <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+                        <p class="gray64">www.navigator.com</p>
+                        <p class="positive">Completed</p>
+                      </td>
+                      <td>
+                        <p class="gray"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></p>
+                        <p class="gray">4</p>
+                        <p class="positive">+329%</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>Pricing <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+                        <p class="gray64">/pricing</p>
+                        <p class="blue">In Progress</p>
+                      </td>
+                      <td>
+                        <p class="gray"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></p>
+                        <p class="gray">4</p>
+                        <p class="gray">-</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>About Us <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+                        <p class="gray64">/about-us</p>
+                        <p class="warning">Queued</p>
+                      </td>
+                      <td>
+                        <p class="gray"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></p>
+                        <p class="gray">2</p>
+                        <p class="gray">-</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>Contact <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+                        <p class="gray64">/contact</p>
+                        <p class="gray64">No experiments</p>
+                      </td>
+                      <td>
+                        <p class="gray"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></p>
+                        <p class="gray">2</p>
+                        <p class="gray">-</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>Features <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+                        <p class="gray64">/features</p>
+                        <p class="gray84"><i class="fa fa-exclamation-triangle mr-2 nigative" aria-hidden="true"></i> Code not detected</p>
+                      </td>
+                      <td>
+                        <p class="gray"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></p>
+                        <p class="gray">2</p>
+                        <p class="gray">-</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+                <!--add page button-->      
+                <div class="w-100 py-2 pl-2 secondAddPageBtn" style="border-bottom: 1px solid #ECEDEE;">
+                  <button class="btn default-btn transparent d-flex border-0 blue align-items-center fs12 ffLight generalBtn ml-md-0 noSmBorder noSmPadding">
+                    <span class="fs22 plusSpan mr-1" style="margin-top: -19px;">+</span>
+                    <span style="margin-top: -2px;">Add page</span>
+                  </button>
+                </div>  
+              </div>
+            </div>
+            <div class="col-xl-9 col-lg-8 rightPagesSide">
+              <div class="align-items-center d-flex experimentsContainer flex-lg-row flex-wrap justify-conent-center rightPagesSideNav">
+                <div class="projectsNumbre addExp pb-2 mb-lg-0 mb-2 pb-lg-0">
+                  <h2 class="fs14 fsSm12 d-lg-block d-none">Homepage</h2>
+                  <h2 class="fs12 fsSm12 d-lg-none">4 Experiments</h2>
+                  <button class="btn default-btn transparent ml-auto d-flex align-items-center blueBtn blue fs12 ffLight generalBtn noSmBorder noSmPadding" id="addExper" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="fs22 plusSpan mr-1" style="margin-top: -19px;">+</span>
+                    <span style="margin-top: -2px;">Add Experiment</span>
+                  </button>
+                  <div class="dropdown-menu p-0" aria-labelledby="addExper">
+                    <a class="dropdown-item fs12" href="#">Split test different URLs</a>
+                    <a class="dropdown-item fs12 border-0" href="#">Optimize a page (recommended)</a>
+                  </div>
+                </div>
+                <div class="projectsNumbre ml-auto d-flex">
+                  <button class="btn default-btn transparent d-flex align-items-center fs12 grayBtn ffLight">
+                    <span class="fs12 mr-1"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+                    <span>Download Report</span>
+                  </button>
+                  <button class="btn default-btn transparent border-0 d-flex align-items-center fs12 ffLight">
+                    <img src="assets/cog.png" alt="cog">
+                    <span class="ml-1">Page Settings</span>
+                  </button>
+                  <button class="btn default-btn transparent border-0" type="button" id="rightNavDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                  <div class="dropdown-menu p-0" aria-labelledby="rightNavDropDown">
+                    <a class="dropdown-item fs12" href="#">Pause the experiments</a>
+                    <a class="dropdown-item fs12" href="#">Restart entire project</a>
+                    <a class="dropdown-item fs12 border-0" href="#">Delete page</a>
+                  </div>
+                </div>
+                </div>
+              <!--first table-->
+              <div class="rightPagesSideTable px-0 mt-sm-3 py-1" style="overflow: auto;">
+                <div class="rightPagesSideNav d-flex justify-conent-center align-items-center mb-1 mx-0 px-md-3 px-0 py-1">
+                  <div class="projectsNumbre addExp">
+                    <svg class="dotss" width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"/>
+                      <rect y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"/>
+                      <rect y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"/>
+                      <rect x="5" y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"/>
+                      <rect x="5" y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"/>
+                      <rect x="5" y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"/>
+                      </svg>
+                      <div class="chkbox ml-lg-3 mr-auto">
+                        <label class="mb-0">
+                          <input type="checkbox" name="checkbox">
+                          <span>
+                            <span class="fs12 gray d-inline-block">
+                              Different headlines
+                              <br />
+                              <span class="fs12 blue">In Progress</span>
+                            </span>
+                          </span>
+                        </label>           
+                      </div>
+                  </div>
+                  <div class="projectsNumbre ml-auto">
+                    <button class="btn default-btn transparent border-0 d-lg-flex align-items-center fs12 ffLight d-none">
+                      <img src="assets/pause.png" alt="pause">
+                      <span class="ml-1">Pause Experiments</span>
+                    </button>
+                    <button class="btn default-btn transparent border-0"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                  </div>                  
+                </div>
+                <!--right table container first table with chart-->
+                <div class="mainTable">
+                  <table class="w-100">
+                  <thead>
+                    <tr class="fs12 gray64 grayE7Bg">
+                      <th>Experiment</th>
+                      <th>Score</th>
+                      <th>Uniques</th>
+                      <th>Conv.</th>
+                      <th>Improve</th>
+                      <th>Progress</th>
+                      <th> </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>Control: Where meetings come together.</p>
+                      </td>
+                      <td>
+                        <span></span>
+                      </td>
+                      <td>
+                        <span>100</span>
+                      </td>
+                      <td>
+                        <span>3</span>
+                        <br />
+                        <span class="gray64">3%</span>
+                      </td>
+                      <td>
+                        <span></span>
+                      </td>
+                      <td>
+                        <span></span>
+                      </td>
+                      <td>
+                        <span></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex customMobileWidth align-items-center fs12">
+                          <div>
+                            <svg class="dotss" width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            </svg>
+                          </div>
+                          <div class="angelArrow"><i class="fa fa-angle-right gray64 fs16" aria-hidden="true"></i></div>
+                          <div>
+                            <p>Where meetings come together.</p>
+                            <span class="gray64">Exp. 1</span>
+                            <span class="nigative"><img src="assets/times.png" alt="times"></span>
+                            <span class="gray64">Lost</span>
+                          </div>            
+                        </div>
+                      </td>
+                      <td>
+                        <span>3%</span>
+                      </td>
+                      <td>
+                        <span>126</span>
+                      </td>
+                      <td>
+                        <span>3</span>
+                        <br />
+                        <span class="gray64">2%</span>
+                      </td>
+                      <td>
+                        <span class="nigative">-33%</span>
+                      </td>
+                      <td>
+                        <div class="d-flex align-items-center justify-content-end">
+                          <div class="perCirc mr-2 negativePercent" data-percent="100">
+                            <div class="perCircInner">
+                              <div class="perCircStat"></div>
+                            </div>
+                          </div>
+                          <span>100%</span>            
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex justify-content-end">
+                          <button class="btn default-btn transparent border-0 fs12 p-0"><i class="fa fa-bell-o nigative" aria-hidden="true"></i></button>
+                          <button class="btn default-btn transparent border-0 fs12 ml-3 p-0"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
+                          <button class="btn default-btn transparent border-0 fs12 ml-3 p-0"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>                          
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex customMobileWidth align-items-center fs12">
+                          <div>
+                            <svg class="dotss" width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            </svg>
+                          </div>
+                          <div class="angelArrow"><i class="fa fa-angle-right gray64 fs16" aria-hidden="true"></i></div>
+                          <div>
+                            <p>Where meetings come together.</p>
+                            <span class="gray64">Exp. 2</span>
+                            <span class="positive"><img src="assets/checkPos.png" alt="checkPos"></span>
+                            <span class="gray64">Winner</span>
+                          </div>            
+                        </div>
+                      </td>
+                      <td>
+                        <span>80%</span>
+                      </td>
+                      <td>
+                        <span>110</span>
+                      </td>
+                      <td>
+                        <span>11</span>
+                        <br />
+                        <span class="gray64">10%</span>
+                      </td>
+                      <td>
+                        <span class="positive">+266%</span>
+                      </td>
+                      <td>
+                        <div class="d-flex align-items-center justify-content-end">
+                          <div class="perCirc mr-2 positivePercent" data-percent="100">
+                            <div class="perCircInner">
+                              <div class="perCircStat"></div>
+                            </div>
+                          </div>
+                          <span>100%</span>            
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex justify-content-end">
+                          <button class="btn default-btn transparent border-0 fs12 p-0"><i class="fa fa-bell-o nigative" aria-hidden="true"></i></button>
+                          <button class="btn default-btn transparent border-0 fs12 ml-3 p-0"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
+                          <button class="btn default-btn transparent border-0 fs12 ml-3 p-0"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>                          
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="collapseTd" data-toggle="collapse" data-target="#collapseMeetingRow" aria-expanded="false" aria-controls="collapseMeetingRow">
+                        <div class="d-flex customMobileWidth align-items-center fs12">
+                          <div>
+                            <svg class="dotss" width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            </svg>
+                          </div>
+                          <div class="angelArrow"><i class="fa fa-angle-right gray64 fs16" aria-hidden="true"></i></div>
+                          <div>
+                            <p>Where meetings are fast and productive.</p>
+                            <span class="gray64">Exp. 3</span>
+                            <button class="btn default-btn transparent border-0 fs12 p-1"><img src="assets/play.png" alt="play" style="margin-top: -5px;"></button>
+                            <span class="gray64">In Progress</span>
+                          </div>            
+                        </div>
+                      </td>
+                      <td>
+                        <span>54%</span>
+                      </td>
+                      <td>
+                        <span>61</span>
+                      </td>
+                      <td>
+                        <span>3</span>
+                        <br />
+                        <span class="gray64">5%</span>
+                      </td>
+                      <td>
+                        <span class="positive">66%</span>
+                      </td>
+                      <td>
+                        <div class="d-flex align-items-center justify-content-end">
+                          <div class="perCirc progressPercent mr-2" data-percent="60">
+                            <div class="perCircInner">
+                              <div class="perCircStat"></div>
+                            </div>
+                          </div>
+                          <span>60%</span>            
+                        </div>
+                      </td>
+                      <td>
+                        <button class="btn default-btn transparent border-0 fs12 ml-3 p-0"><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
+                        <button class="btn default-btn transparent border-0 fs12 ml-3 p-0"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                      </td>
+                      <tr class="border-0 collapseRowContainer">
+                        <td colspan="7" style="height: auto; padding-top: 0; padding-bottom:0">
+                          <div class="collapse" id="collapseMeetingRow" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="meetingRowContainer d-flex justify-content-center">
+                              <div class="meeterScreenContainer w-50 mr-2 mr-sm-0 mb-3">
+                                <header class="pr-3 py-2 mb-sm-3">
+                                  <button class="btn default-btn transparent border-0 fs12 p-0">
+                                    Control
+                                  </button>
+                                  <button class="btn default-btn transparent border-0 fs12 p-0 gray64 float-right align-items-center d-lg-flex d-none" data-toggle="modal" data-target="#fullScreen">
+                                    <img src="assets/expand.png" class="mr-1" alt="expand">
+                                    Full screen
+                                  </button>
+                                </header>
+                                <div class="screenContainer text-center">
+                                  <img src="assets/meetingRowScreen.png" alt="meetingRowScreen">
+                                </div>
+                              </div>
+                              <div class="meeterScreenContainer w-50 mb-3">
+                                <header class="pl-sm-3 py-2 mb-sm-3">
+                                  <button class="btn default-btn transparent border-0 fs12 p-0">
+                                    Experiment
+                                  </button>
+                                  <button class="btn default-btn transparent border-0 fs12 p-0 gray64 float-right align-items-center d-lg-flex d-none">
+                                    <img src="assets/expand.png" class="mr-1" alt="expand">
+                                    Full screen
+                                  </button>
+                                </header>
+                                <div class="screenContainer text-center">
+                                  <img src="assets/meetingRowScreen.png" alt="meetingRowScreen">
+                                </div>
+                              </div>                              
+                            </div>
+                            <div class="meetingRowContainer d-flex justify-content-center">
+                              <div class="w-100">
+                                <canvas class="w-100 pagesChart" id="canvas" height="100"></canvas>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex customMobileWidth align-items-center fs12">
+                          <div>
+                            <svg class="dotss" width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            </svg>
+                          </div>
+                          <div class="angelArrow"><i class="fa fa-angle-right gray64 fs16" aria-hidden="true"></i></div>
+                          <div>
+                            <p>Where meetings come together.</p>
+                            <span class="gray64">Exp. 4</span>
+                            <span><img src="assets/hourglass.png" alt="hourglass"></span>
+                            <span class="gray64">Queued</span>
+                          </div>            
+                        </div>
+                      </td>
+                      <td>
+                        <span>3%</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                        <br />
+                        <span class="gray64"></span>
+                      </td>
+                      <td>
+                        <span class="gray64">-</span>
+                      </td>
+                      <td>
+                        <div class="d-flex align-items-center justify-content-end">
+                          <div class="perCirc mr-2 progressPercent" data-percent="0">
+                            <div class="perCircInner">
+                              <div class="perCircStat"></div>
+                            </div>
+                          </div>
+                          <span>-</span>            
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex justify-content-end">
+                          <button class="btn default-btn transparent border-0 fs12 ml-3 p-0" disabled><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
+                          <button class="btn default-btn transparent border-0 fs12 ml-3 p-0" disabled><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>                          
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </div>
+              <!--second table-->
+              <div class="rightPagesSideTable bottomTable px-0 mt-2 py-1" style="overflow: auto;">
+                <div class="rightPagesSideNav d-flex justify-conent-center align-items-center mb-1 mx-0 px-md-3 px-0 py-1">
+                  <div class="projectsNumbre addExp">
+                    <svg class="dotss" width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"/>
+                      <rect y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"/>
+                      <rect y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"/>
+                      <rect x="5" y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"/>
+                      <rect x="5" y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"/>
+                      <rect x="5" y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"/>
+                      </svg>
+                      <div class="chkbox ml-lg-3 mr-auto">
+                        <label class="mb-0">
+                          <input type="checkbox" name="checkbox">
+                          <span>
+                            <span class="fs12 gray d-inline-block">
+                              Different subheadlines
+                              <br />
+                              <span class="fs12 warning">Queued</span>
+                            </span>
+                          </span>
+                        </label>           
+                      </div>
+                  </div>
+                  <div class="projectsNumbre ml-auto">
+                    <button class="btn default-btn transparent border-0 d-lg-flex align-items-center fs12 ffLight d-none">
+                      <img src="assets/pause.png" alt="pause">
+                      <span class="ml-1">Pause Experiments</span>
+                    </button>
+                    <button class="btn default-btn transparent border-0"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                  </div>                  
+                </div>
+                <!--right table container second table with chart-->
+                <div class="mainTable">
+                  <table class="w-100">
+                  <thead>
+                    <tr class="fs12 gray64 grayE7Bg">
+                      <th>Experiment</th>
+                      <th>Score</th>
+                      <th>Uniques</th>
+                      <th>Conv.</th>
+                      <th>Improve</th>
+                      <th>Progress</th>
+                      <th> </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>Control: Navigator brings collaborative agendas, files, notes and action items to every meeting on your calendar.</p>
+                      </td>
+                      <td>
+                        <span></span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                        <br />
+                        <span></span>
+                      </td>
+                      <td>
+                        <span></span>
+                      </td>
+                      <td>
+                        <span></span>
+                      </td>
+                      <td>
+                        <span></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex customMobileWidth align-items-center fs12">
+                          <div>
+                            <svg class="dotss" width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            </svg>
+                          </div>
+                          <div class="angelArrow"><i class="fa fa-angle-right gray64 fs16" aria-hidden="true"></i></div>
+                          <div>
+                            <p>Brings collaborative agendas, files, notes and action items to every meeting on your calendar.</p>
+                            <span class="gray64">Exp. 1</span>
+                            <span class="nigative"><img src="assets/hourglass.png" alt="hourglass"></span>
+                            <span class="gray64">Queued</span>
+                          </div>            
+                        </div>
+                      </td>
+                      <td>
+                        <span>80%</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <div class="d-flex align-items-center justify-content-end">
+                          <div class="perCirc mr-2 progressPercent" data-percent="0">
+                            <div class="perCircInner">
+                              <div class="perCircStat"></div>
+                            </div>
+                          </div>
+                          <span>-</span>            
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex justify-content-end">
+                          <button class="btn default-btn transparent border-0 fs12 ml-3 p-0" disabled><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
+                          <button class="btn default-btn transparent border-0 fs12 ml-3 p-0" disabled><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>                          
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex customMobileWidth align-items-center fs12">
+                          <div>
+                            <svg class="dotss" width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            </svg>
+                          </div>
+                          <div class="angelArrow"><i class="fa fa-angle-right gray64 fs16" aria-hidden="true"></i></div>
+                          <div>
+                            <p>Brings collaborative agendas, files, notes and action items to every meeting on your calendar.</p>
+                            <span class="gray64">Exp. 1</span>
+                            <span class="nigative"><img src="assets/hourglass.png" alt="hourglass"></span>
+                            <span class="gray64">Queued</span>
+                          </div>            
+                        </div>
+                      </td>
+                      <td>
+                        <span>54%</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <div class="d-flex align-items-center justify-content-end">
+                          <div class="perCirc mr-2 progressPercent" data-percent="0">
+                            <div class="perCircInner">
+                              <div class="perCircStat"></div>
+                            </div>
+                          </div>
+                          <span>-</span>            
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex justify-content-end">
+                          <button class="btn default-btn transparent border-0 fs12 ml-3 p-0" disabled><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
+                          <button class="btn default-btn transparent border-0 fs12 ml-3 p-0" disabled><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>                          
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex customMobileWidth align-items-center fs12">
+                          <div>
+                            <svg class="dotss" width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="0.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="6.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            <rect x="5" y="12.5" width="3" height="3" rx="1.5" fill="#C4C4C4"></rect>
+                            </svg>
+                          </div>
+                          <div class="angelArrow"><i class="fa fa-angle-right gray64 fs16" aria-hidden="true"></i></div>
+                          <div>
+                            <p>Brings collaborative agendas, files, notes and action items to every meeting on your calendar.</p>
+                            <span class="gray64">Exp. 1</span>
+                            <span class="nigative"><img src="assets/hourglass.png" alt="hourglass"></span>
+                            <span class="gray64">Queued</span>
+                          </div>            
+                        </div>
+                      </td>
+                      <td>
+                        <span>3%</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <span>-</span>
+                      </td>
+                      <td>
+                        <div class="d-flex align-items-center justify-content-end">
+                          <div class="perCirc mr-2 progressPercent" data-percent="0">
+                            <div class="perCircInner">
+                              <div class="perCircStat"></div>
+                            </div>
+                          </div>
+                          <span>-</span>            
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex justify-content-end">
+                          <button class="btn default-btn transparent border-0 fs12 ml-3 p-0" disabled><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
+                          <button class="btn default-btn transparent border-0 fs12 ml-3 p-0" disabled><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>                          
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="collaborators" class="tab-pane fade">
+        <div class="pt-1 w-100">
+          <div class="col-lg-4 col-xl-3 projectsNumbreContainer px-sm-0">
+            <div class="projectsNumbre mb-2 pb-1">
+              <h2 class="fs18 fsSm12 mr-auto"><span class="number">5 </span>Collaborators</h2>
+              <button class="btn default-btn transparent d-flex align-items-center fs12 blue ffLight blueBtn generalBtn ml-auto ml-md-0 noSmBorder noSmPadding" data-toggle="modal" data-target="#addCollaborators">
+                <span class="fs22 plusSpan mr-1" style="margin-top: -19px;">+</span>
+                <span style="margin-top: -2px;">Add Collaborators</span>
+              </button>
+            </div>
+            <div class="searchContainer w-100 mb-0">
+              <div class="form-group has-search mb-0 position-relative">
+                <span class="fa fa-search form-control-feedback fs13 ml-3 fs12"></span>
+                <input type="text" class="form-control fs12 grayFABgColor" placeholder="Search">
+              </div>
+            </div>               
+          </div>            
+        </div>
+        <!--table-->
+        <div class="mainTable w-100 collaboratorsTable borderdMailTable mt-2">
+          <table class="col-md-12 p-0">
+          <thead>
+            <tr class="fs12 transparent gray64">
+              <th style="width: 28%;">
+                <div class="chkbox">
+                  <label class="mb-0">
+                    <input type="checkbox" name="checkbox">
+                    <span>
+                      <span class="fs12 gray d-inline-block">
+                        Name
+                      </span>
+                    </span>
+                  </label>           
+                </div>
+              </label>
+            </th>
+              <th style="width: 30%;">Email</th>
+              <th>Access</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center profileCollDetails">
+                  <div class="chkbox">
+                    <label class="mb-0">
+                      <input type="checkbox" name="checkbox">
+                      <span>
+                    </label>           
+                  </div>
+                  <span class="avatar m-0 mr-2">JD</span>
+                  <span>John Doe</span>
+                </div>
+              </td>
+              <td>johndoe@mail.com</td>
+              <td>Owner</td>
+              <td>
+                <button class="btn default-btn transparent border-0 fs12 p-0" id="sett" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown" aria-labelledby="sett">
+                  <a class="dropdown-item fs12" href="#">Transfer ownership</a>
+                  <a class="dropdown-item fs12" href="#">Delete user</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center profileCollDetails">
+                  <div class="chkbox">
+                    <label class="mb-0">
+                      <input type="checkbox" name="checkbox">
+                      <span>
+                    </label>           
+                  </div>
+                  <span class="avatar m-0 mr-2">JD</span>
+                  <span>John Doe</span>
+                </div>
+              </td>
+              <td>johndoe@mail.com</td>
+              <td>
+                <a class="dropdown-toggle grayColor" href="#" role="button" id="view" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Edit
+                </a>
+                <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown" aria-labelledby="view">
+                  <a class="dropdown-item fs12 gray64 border-0" href="#">Change access:</a>
+                  <a class="dropdown-item fs12" href="#">Editor</a>
+                  <a class="dropdown-item fs12" href="#">Viewer</a>
+                </div>
+              </td>
+              <td>
+                <button class="btn default-btn transparent border-0 fs12 p-0" id="sett" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown" aria-labelledby="sett">
+                  <a class="dropdown-item fs12" href="#">Transfer ownership</a>
+                  <a class="dropdown-item fs12" href="#">Delete user</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center profileCollDetails">
+                  <div class="chkbox">
+                    <label class="mb-0">
+                      <input type="checkbox" name="checkbox">
+                      <span>
+                    </label>           
+                  </div>
+                  <span class="avatar m-0 mr-2">JD</span>
+                  <span>John Doe</span>
+                </div>
+              </td>
+              <td>johndoe@mail.com</td>
+              <td>
+                <a class="dropdown-toggle grayColor" href="#" role="button" id="view" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Edit
+                </a>
+                <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown" aria-labelledby="view">
+                  <a class="dropdown-item fs12 gray64 border-0" href="#">Change access:</a>
+                  <a class="dropdown-item fs12" href="#">Editor</a>
+                  <a class="dropdown-item fs12" href="#">Viewer</a>
+                </div>
+              </td>
+              <td>
+                <button class="btn default-btn transparent border-0 fs12 p-0" id="sett" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown" aria-labelledby="sett">
+                  <a class="dropdown-item fs12" href="#">Transfer ownership</a>
+                  <a class="dropdown-item fs12" href="#">Delete user</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center profileCollDetails">
+                  <div class="chkbox">
+                    <label class="mb-0">
+                      <input type="checkbox" name="checkbox">
+                      <span>
+                    </label>           
+                  </div>
+                  <span class="avatar m-0 mr-2">JD</span>
+                  <span>John Doe</span>
+                </div>
+              </td>
+              <td>johndoe@mail.com</td>
+              <td>
+                <a class="dropdown-toggle grayColor" href="#" role="button" id="view" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  View
+                </a>
+                <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown" aria-labelledby="view">
+                  <a class="dropdown-item fs12 gray64 border-0" href="#">Change access:</a>
+                  <a class="dropdown-item fs12" href="#">Editor</a>
+                  <a class="dropdown-item fs12" href="#">Viewer</a>
+                </div>
+              </td>
+              <td>
+                <button class="btn default-btn transparent border-0 fs12 p-0" id="sett" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown" aria-labelledby="sett">
+                  <a class="dropdown-item fs12" href="#">Transfer ownership</a>
+                  <a class="dropdown-item fs12" href="#">Delete user</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center profileCollDetails">
+                  <div class="chkbox">
+                    <label class="mb-0">
+                      <input type="checkbox" name="checkbox">
+                      <span>
+                    </label>           
+                  </div>
+                  <span class="avatar m-0 mr-2">JD</span>
+                  <span>John Doe</span>
+                </div>
+              </td>
+              <td>johndoe@mail.com</td>
+              <td>
+                <a class="dropdown-toggle grayColor" href="#" role="button" id="view" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  View
+                </a>
+                <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown" aria-labelledby="view">
+                  <a class="dropdown-item fs12 gray64 border-0" href="#">Change access:</a>
+                  <a class="dropdown-item fs12" href="#">Editor</a>
+                  <a class="dropdown-item fs12" href="#">Viewer</a>
+                </div>
+              </td>
+              <td>
+                <button class="btn default-btn transparent border-0 fs12 p-0" id="sett" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown" aria-labelledby="sett">
+                  <a class="dropdown-item fs12" href="#">Transfer ownership</a>
+                  <a class="dropdown-item fs12" href="#">Delete user</a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      <div id="report" class="tab-pane fade bg-white">
+        <!--report header-->
+        <div class="report_header d-flex mb-5">
+          <div class="pdf_logo">
+            <img src="assets/pdf_logo.png" alt="pdf_logo">
+          </div>
+          <div class="ml-auto">
+            <span class="fs10" style="color: #666;">Generated on: Dec 12, 2020 11:04 AM</span>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-2 p-0">
+              <ul class="list-unstyled p-0 m-0">
+                <li class="mb-4">
+                  <h2 class="fs14">Navigator</h2>
+                  <a class="fs10 blue" href="#">https://navigator.com/</a>
+                </li>
+                <li class="mb-3">
+                  <p class="gray64 fs10">Status</p>
+                  <h2 class="align-items-center blackColor d-flex fs10 mt-2">
+                    <div class="perCirc progressPercent mr-2" data-percent="60" style="background-image: linear-gradient(126deg, transparent 50%, rgb(1, 122, 255) 50%), linear-gradient(90deg, rgb(231, 232, 234) 50%, transparent 50%);">
+                      <div class="perCircInner">
+                        <div class="perCircStat"></div>
+                      </div>
+                    </div>
+                    In Progress
+                  </h2>
+                </li>
+                <li class="mb-3">
+                  <p class="gray64 fs10">Duration</p>
+                  <h2 class="fs10 blackColor mt-2">16d 12h 47m</h2>
+                </li>
+                <li class="mb-3">
+                  <p class="gray64 fs10">Start</p>
+                  <h2 class="fs10 blackColor mt-2">Nov 27, 2020</h2>
+                </li>
+                <li class="mb-3">
+                  <p class="gray64 fs10">End</p>
+                  <h2 class="fs10 blackColor mt-2">Dec 12, 2020</h2>
+                </li>
+              </ul>
+            </div>
+            <div class="col-10 p-0 homepage_screen_shot">
+              <div class="d-flex justify-content-center align-items-center w-100 grayFABgColor fs12" style="height: 460px;border: 1px solid rgba(13, 23, 42, 0.4);border-radius: 4px;">
+                Homepage Screenshot
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="container-fluid">
+          <!--second row-->
+          <div class="row">
+            <h2 class="fs18 w-100 mb-3 pl-3">Summary</h2>
+            <div class="col-6 col-lg-3 mb-4">
+              <div class="cellContainer">
+                <p class="gray64 fs12">Total visitors</p>
+                <h2 class="align-items-center blackColor d-flex fs18 mt-2">5,291</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-1">
+                <p class="gray64 fs12">Control conversions</p>
+                <h2 class="fs18 blackColor mt-2">5,291</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4">
+              <div class="cellContainer ml-lg-1 pl-lg-2">
+                <p class="gray64 fs12">Experiment conversions</p>
+                <h2 class="fs18 blackColor mt-2">5,291</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-3">
+                <p class="gray64 fs12">Total improvement</p>
+                <h2 class="fs18 blackColor mt-2 fw600 positive"><span><i class="fa positive fa-arrow-up" aria-hidden="true"></i></span> 598%</h2>
+              </div>
+            </div>
+          </div>
+          <!--third row-->
+          <div class="row mb-3 pb-3 mobBorder">
+            <div class="col-6 col-lg-3">
+              <div class="cellContainer">
+                <p class="gray64 fs12">Total pages</p>
+                <h2 class="align-items-center blackColor d-flex fs18 mt-2">5</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-1">
+                <p class="gray64 fs12">Total experiments</p>
+                <h2 class="fs18 blackColor mt-2">8</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="cellContainer ml-lg-1 pl-lg-2">
+                <p class="gray64 fs12">Options tested</p>
+                <h2 class="fs18 blackColor mt-2">16</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-3">
+                <p class="gray64 fs12">Most impactful</p>
+                <h2 class="fs18 blackColor mt-2">Headline <span class="positive d-inline-block fw600"><i class="fa positive fa-arrow-up" aria-hidden="true"></i> 598%</span></h2>
+              </div>
+            </div>
+          </div>
+          <!--table-->
+          <div class="row">
+            <div class="mainTable overviewTable">
+              <h2 class="fs18 mb-3">Pages</h2>
+              <table class="col-md-12 table-bordered">
+              <thead>
+                <tr class="fs12 gray64 grayE7Bg">
+                  <th class="page">Page</th>
+                  <th class="experiments">Experiments</th>
+                  <th class="visitors">Visitors</th>
+                  <th class="improvement">Improvement</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="gray84">
+                  <td class="leftMobileColumn mainTableTitle">
+                    <p>Home</p>
+                    <a class="blue" href="#">www.navigator.com</a>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn">
+                    <span>4</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn">
+                    <span>3,291</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn">
+                    <span class="positive">+372%</span>
+                  </td>
+                </tr>
+                <tr class="gray84">
+                  <td class="leftMobileColumn">
+                    <p>About Us</p>
+                    <a class="blue" href="#">/about</a>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn">
+                    <span>3</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn">
+                    <span>3,291</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn">
+                    <span class="positive">
+                      <span>+372%</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="gray84">
+                  <td class="leftMobileColumn">
+                    <p class="gray84">Pricing</p>
+                    <a class="blue" href="#">/pricing</a>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn">
+                    <span>2</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn">
+                    <span>3,291</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn">
+                    <span class="positive">
+                      <span>+372%</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="gray84">
+                  <td class="leftMobileColumn">
+                    <p>Features</p>
+                    <a class="blue" href="#">/features</a>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn" data-title="Experiments: 0">
+                    <span>0</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn" data-title="Visitors: 3,291">
+                    <span>3,291</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn" data-title="improvement: +372%">
+                    <span class="positive">
+                      <span>+372%</span>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+        </div>
+        <div class="break w-100 grayE7Bg my-4" style="height: 16px;"></div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-2 p-0">
+              <ul class="list-unstyled p-0 m-0">
+                <li class="mb-4">
+                  <h2 class="fs14">Navigator</h2>
+                  <a class="fs10 blue" href="#">https://navigator.com/</a>
+                </li>
+                <li class="mb-3">
+                  <p class="gray64 fs10">Status</p>
+                  <h2 class="align-items-center blackColor d-flex fs10 mt-2">
+                    <div class="perCirc progressPercent mr-2" data-percent="60" style="background-image: linear-gradient(126deg, transparent 50%, rgb(1, 122, 255) 50%), linear-gradient(90deg, rgb(231, 232, 234) 50%, transparent 50%);">
+                      <div class="perCircInner">
+                        <div class="perCircStat"></div>
+                      </div>
+                    </div>
+                    In Progress
+                  </h2>
+                </li>
+                <li class="mb-3">
+                  <p class="gray64 fs10">Duration</p>
+                  <h2 class="fs10 blackColor mt-2">16d 12h 47m</h2>
+                </li>
+                <li class="mb-3">
+                  <p class="gray64 fs10">Start</p>
+                  <h2 class="fs10 blackColor mt-2">Nov 27, 2020</h2>
+                </li>
+                <li class="mb-3">
+                  <p class="gray64 fs10">End</p>
+                  <h2 class="fs10 blackColor mt-2">Dec 12, 2020</h2>
+                </li>
+              </ul>
+            </div>
+            <div class="col-10 p-0 homepage_screen_shot">
+              <div class="d-flex justify-content-center align-items-center w-100 grayFABgColor fs12" style="height: 460px;border: 1px solid rgba(13, 23, 42, 0.4);border-radius: 4px;">
+                Homepage Screenshot
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="container-fluid">
+          <!--second row-->
+          <div class="row">
+            <h2 class="fs18 w-100 mb-3 pl-3">Summary</h2>
+            <div class="col-6 col-lg-3 mb-4">
+              <div class="cellContainer">
+                <p class="gray64 fs12">Total visitors</p>
+                <h2 class="align-items-center blackColor d-flex fs18 mt-2">5,291</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-1">
+                <p class="gray64 fs12">Control conversions</p>
+                <h2 class="fs18 blackColor mt-2">5,291</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4">
+              <div class="cellContainer ml-lg-1 pl-lg-2">
+                <p class="gray64 fs12">Experiment conversions</p>
+                <h2 class="fs18 blackColor mt-2">5,291</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-3">
+                <p class="gray64 fs12">Total improvement</p>
+                <h2 class="fs18 blackColor mt-2 fw600 positive"><span><i class="fa positive fa-arrow-up" aria-hidden="true"></i></span> 598%</h2>
+              </div>
+            </div>
+          </div>
+          <!--third row-->
+          <div class="row mb-3 pb-3 mobBorder">
+            <div class="col-6 col-lg-3">
+              <div class="cellContainer">
+                <p class="gray64 fs12">Total experiments</p>
+                <h2 class="align-items-center blackColor d-flex fs18 mt-2">5</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-1">
+                <p class="gray64 fs12">Options tested</p>
+                <h2 class="fs18 blackColor mt-2">8</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-3">
+                <p class="gray64 fs12">Most impactful</p>
+                <h2 class="fs18 blackColor mt-2">Different headline <span class="positive d-inline-block fw600"><i class="fa positive fa-arrow-up" aria-hidden="true"></i> 598%</span></h2>
+              </div>
+            </div>
+          </div>
+          <!--table-->
+          <div class="row mb-5">
+            <div class="mainTable overviewTable">
+              <h2 class="fs18 mb-3">Experiments</h2>
+              <table class="col-md-12 table-bordered">
+              <thead>
+                <tr class="fs12 gray64 grayE7Bg">
+                  <th class="page">Page</th>
+                  <th class="experiments">Experiments</th>
+                  <th class="visitors">Visitors</th>
+                  <th class="improvement">Improvement</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="gray84">
+                  <td class="leftMobileColumn mainTableTitle">
+                    <p>Different headlines</p>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn">
+                    <span>4</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn">
+                    <span>3,291</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn">
+                    <span class="positive">+372%</span>
+                  </td>
+                </tr>
+                <tr class="gray84">
+                  <td class="leftMobileColumn">
+                    <p class="gray84">Different subheadlines</p>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn">
+                    <span>3</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn">
+                    <span>3,291</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn">
+                    <span class="positive">
+                      <span>+372%</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="gray84">
+                  <td class="leftMobileColumn">
+                    <p class="gray84">Button text</p>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn">
+                    <span>2</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn">
+                    <span>3,291</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn">
+                    <span class="positive">
+                      <span>+372%</span>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+          <!--table-->
+          <div class="row mb-5">
+            <div class="mainTable overviewTable">
+              <h2 class="fs18 mb-3"><span class="gray64">Home <i class="fa fa-angle-right mx-2 fs20" aria-hidden="true" style="vertical-align: baseline;"></i>
+              </span> <span>Different headline</span> </h2>
+              <table class="col-md-12 table-bordered">
+              <thead>
+                <tr class="fs12 gray64 grayE7Bg">
+                  <th class="page">Page</th>
+                  <th class="Probability">Probability</th>
+                  <th class="visitors">Visitors</th>
+                  <th class="Conversion">Conversion</th>
+                  <th class="Improvement">Improvement</th>
+                  <th class="Progress">Progress</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="gray84">
+                  <td class="leftMobileColumn mainTableTitle">
+                    <p>Control</p>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn">
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn">
+                    <span>500</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn">
+                    <span>10</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn">
+                    
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn">
+                    <span class="blue">
+                      <span>100%</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="gray84">
+                  <td class="leftMobileColumn">
+                    <p class="gray84">1. Meetings with your team.</p>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn">
+                    <span>41%</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn">
+                    <span>500</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn">
+                    <span>15</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn">
+                    <span class="positive">
+                      <span>+216%</span>
+                    </span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn">
+                    <span class="blue">
+                      <span>100%</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="gray84">
+                  <td class="leftMobileColumn">
+                    <p class="gray84">2. Fast and productive meetings.</p>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn">
+                    <span>57%</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn">
+                    <span>500</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn">
+                    <span>11</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn">
+                    <span class="positive">
+                      <span>+172%</span>
+                    </span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn">
+                    <span class="blue">
+                      <span>100%</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr class="gray84">
+                  <td class="leftMobileColumn">
+                    <p class="gray84">2. Fast and productive meetings.</p>
+                  </td>
+                  <td class="rightMobilecolumn topTableColumn">
+                    <span>92%</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn">
+                    <span>500</span>
+                  </td>
+                  <td class="rightMobilecolumn middleTableColumn">
+                    <span>22</span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn">
+                    <span class="positive">
+                      <span>+372%</span>
+                    </span>
+                  </td>
+                  <td class="rightMobilecolumn bottomTableColumn">
+                    <span class="blue">
+                      <span>100%</span>
+                    </span>
+                  </td>
+                </tr>                
+              </tbody>
+            </table>
+          </div>
+          </div>
+          <div class="row">
+            <h2 class="fs18 mb-3"><span class="gray64">Home <i class="fa fa-angle-right mx-2 fs20" aria-hidden="true" style="vertical-align: baseline;"></i>
+            </span> <span class="gray64">Different headline</span> <i class="fa fa-angle-right mx-2 fs20" aria-hidden="true" style="vertical-align: baseline;"></i> <span>Option #1</span></h2>           
+          </div>
+          <div class="row mb-3 pb-3 mobBorder">
+            <div class="col-6 col-lg-3 pl-0">
+              <div class="cellContainer">
+                <p class="gray64 fs12">Result</p>
+                <h2 class="align-items-center blackColor d-flex fs18 mt-2">+216%</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-1">
+                <p class="gray64 fs12">Duration</p>
+                <h2 class="fs18 blackColor mt-2">16d 12h 47m</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-1">
+                <p class="gray64 fs12">Start</p>
+                <h2 class="fs18 blackColor mt-2">Nov 27, 2020</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-3">
+                <p class="gray64 fs12">End</p>
+                <h2 class="fs18 blackColor mt-2">Dec 12, 2020</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="meetingRowContainer d-flex justify-content-center w-100">
+              <div class="meeterScreenContainer w-50 mr-2 mr-sm-0 mb-3 pr-2">
+                <header class="pr-3 py-2 mb-0">
+                  <button class="btn default-btn transparent border-0 fs12 p-0">
+                    Control
+                  </button>
+                  <button class="btn default-btn transparent border-0 fs12 p-0 gray64 float-right align-items-center d-lg-flex d-none" data-toggle="modal" data-target="#fullScreen">
+                    Full screen
+                  </button>
+                </header>
+                <div class="d-flex justify-content-center align-items-center w-100 grayFABgColor fs12" style="height: 220px;border: 1px solid rgba(13, 23, 42, 0.4);border-radius: 4px;">
+                  Control Screenshot
+                </div>
+              </div>
+              <div class="meeterScreenContainer w-50 mb-3 pl-2">
+                <header class="pl-sm-3 py-2 mb-0">
+                  <button class="btn default-btn transparent border-0 fs12 p-0">
+                    Option #1
+                  </button>
+                  <button class="btn default-btn transparent border-0 fs12 p-0 gray64 float-right align-items-center d-lg-flex d-none">
+                    Full screen
+                  </button>
+                </header>
+                <div class="d-flex justify-content-center align-items-center w-100 grayFABgColor fs12" style="height: 220px;border: 1px solid rgba(13, 23, 42, 0.4);border-radius: 4px;">
+                  Option #1 Screenshot
+                </div>
+              </div>                              
+            </div>
+          </div>
+          <div class="meetingRowContainer row d-flex justify-content-center mb-5">
+            <div class="chartInfo ml-auto fs12 mb-2"><span class="gray dataSet dataSetGray mr-3">Control</span><span class="blue dataSet">Experiment</span></div>
+            <div class="w-100"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
+              <canvas class="w-100 pagesChart" id="canvas2" height="50"></canvas>
+            </div>
+          </div>
+          <div class="row">
+            <h2 class="fs18 mb-3"><span class="gray64">Home <i class="fa fa-angle-right mx-2 fs20" aria-hidden="true" style="vertical-align: baseline;"></i>
+            </span> <span class="gray64">Different headline</span> <i class="fa fa-angle-right mx-2 fs20" aria-hidden="true" style="vertical-align: baseline;"></i> <span>Option #2</span></h2>           
+          </div>
+          <div class="row mb-3 pb-3 mobBorder">
+            <div class="col-6 col-lg-3 pl-0">
+              <div class="cellContainer">
+                <p class="gray64 fs12">Result</p>
+                <h2 class="align-items-center blackColor d-flex fs18 mt-2">+216%</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-1">
+                <p class="gray64 fs12">Duration</p>
+                <h2 class="fs18 blackColor mt-2">16d 12h 47m</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-1">
+                <p class="gray64 fs12">Start</p>
+                <h2 class="fs18 blackColor mt-2">Nov 27, 2020</h2>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 pl-4 pl-sm-0">
+              <div class="cellContainer pl-lg-3">
+                <p class="gray64 fs12">End</p>
+                <h2 class="fs18 blackColor mt-2">Dec 12, 2020</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="meetingRowContainer d-flex justify-content-center w-100">
+              <div class="meeterScreenContainer w-50 mr-2 mr-sm-0 mb-3 pr-2">
+                <header class="pr-3 py-2 mb-0">
+                  <button class="btn default-btn transparent border-0 fs12 p-0">
+                    Control
+                  </button>
+                  <button class="btn default-btn transparent border-0 fs12 p-0 gray64 float-right align-items-center d-lg-flex d-none" data-toggle="modal" data-target="#fullScreen">
+                    Full screen
+                  </button>
+                </header>
+                <div class="d-flex justify-content-center align-items-center w-100 grayFABgColor fs12" style="height: 220px;border: 1px solid rgba(13, 23, 42, 0.4);border-radius: 4px;">
+                  Control Screenshot
+                </div>
+              </div>
+              <div class="meeterScreenContainer w-50 mb-3 pl-2">
+                <header class="pl-sm-3 py-2 mb-0">
+                  <button class="btn default-btn transparent border-0 fs12 p-0">
+                    Option #2
+                  </button>
+                  <button class="btn default-btn transparent border-0 fs12 p-0 gray64 float-right align-items-center d-lg-flex d-none">
+                    Full screen
+                  </button>
+                </header>
+                <div class="d-flex justify-content-center align-items-center w-100 grayFABgColor fs12" style="height: 220px;border: 1px solid rgba(13, 23, 42, 0.4);border-radius: 4px;">
+                  Option #2 Screenshot
+                </div>
+              </div>                              
+            </div>
+          </div>
+          <div class="meetingRowContainer row d-flex justify-content-center">
+            <div class="chartInfo ml-auto fs12 mb-2"><span class="gray dataSet dataSetGray mr-3">Control</span><span class="blue dataSet">Experiment</span></div>
+            <div class="w-100"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
+              <canvas class="w-100 pagesChart" id="canvas3" height="50"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--settings-->
+      <div id="settings" class="tab-pane fade projectsSettings">
+        <div class="mainTitle pb-2 pb-sm-0 pt-2 px-sm-0 px-3">
+          <h2 class="gray64 fs18">Project Settings</h2>
+        </div>
+        <div class="col-12 col-lg-6 bg-white projectsSettingContainer p-3 mt-2">
+          <form class="pt-1">
+            <div class="form-group mb-2">
+              <label for="projectName" class="fs12 mb-1">Project name</label>
+              <input type="text" class="form-control fs12" id="projectName" placeholder="Project name" value="AutoOptimize Website">
+            </div>
+            <div class="form-group mb-2 pt-1">
+              <label for="projectUrl" class="fs12 mb-1">Project URL</label>
+              <input type="text" class="form-control fs12" id="projectUrl" placeholder="Project URL" value="www.navigator.com">
+            </div>
+            <div class="form-group mb-2 pt-1">
+              <label for="projecScript" class="fs12 mb-1">Project script</label>
+              <textarea class="form-control fs12" id="projecScript" rows="5" placeholder="Project script"> </textarea>
+            </div>
+          </form>
+          <div class="mb-2 pt-1">
+            <p class="fs12">Please copy and paste the code into the HEAD section of this page.</p>
+            <a href="#" class="blue fs12">https://navigator.com/</a>     
+            <div class="d-flex mt-2">
+              <button class="btn default-btn transparent d-flex align-items-center blueBtn blue fs12 generalBtn">
+                <span class="fs22 plusSpan mr-1" style="margin-top: -19px;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></span>
+                <span style="margin-top: -2px;">How to install the code</span>
+              </button>    
+              <button class="btn default-btn  ml-auto d-flex align-items-center fs12 gray84 generalBtn">
+                <span class="fs22 plusSpan mr-1" style="margin-top: -21px;"><i class="fa fa-files-o fs14" aria-hidden="true"></i></i></span>
+                <span style="margin-top: -2px;">Copy code</span>
+              </button>                 
+            </div>    
+          </div>
+            <div class="form-group mb-4 pt-1">
+              <label for="email" class="fs12 mb-1">Need help? Email instructions to your developer</label>
+              <div class="d-flex">
+                <input type="text" class="form-control fs12 w-50 devEmails mr-2" id="email" placeholder="Developer’s Email Address">
+                <button class="btn btn-primary d-flex align-items-center blueBtn fs12 generalBtn">
+                  <span style="margin-top: -2px;">Send</span>
+                </button>                   
+              </div>
+            </div>
+            <button class="btn btn-primary ml-auto d-flex align-items-center blueBtn fs12 generalBtn" data-toggle="modal" data-target="#finalStep3">
+              <span style="margin-top: -2px;">Test & Continue</span>
+            </button>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mobileOverlay" class="w-100 h-100 fixed-top d-none"></div>
+  <!-- jQuery -->
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <!-- Popper.JS -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!--aos plugin-->
+  <script src="js/aos.js"></script>
+  <!-- Chart JS -->
+  <script src="js/chart.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/pageschart.js"></script>
+  
+  <!-- custom JS -->
+  <script src="js/custom.js"></script>
+  <script>
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        avatarDescBox.classList.add("hideAvaDesContainer");
+      } else {
+        avatarDescBox.classList.remove("hideAvaDesContainer");
+      }
+    }
+    // toggle fa arrow
+    toggleFaArrow.addEventListener("click", function(){
+      this.classList.toggle("mobileCollapsedFa");
+      mobileOverlay.classList.toggle("d-none");
+      mainNav.classList.toggle("secondLayer")
+    })
+    expandTd.forEach(function(collTd){
+      collTd.addEventListener("click",function(exactTd){
+        const expandedTd = exactTd.currentTarget;
+        const rightAngel = expandedTd.querySelector(".fa-angle-right");
+        rightAngel.classList.toggle("angelDown")
+      })
+    })
+    jQuery(document).ready(function($) {
+      var collapseLeftContainerClass = function() {
+      var ww = document.body.clientWidth;
+        if (ww < 574) {
+          $('.leftSideContainer').addClass('collapse');
+        } else if (ww >= 575) {
+          $('.leftSideContainer').removeClass('collapse');
+          
+        };
+      };
+  $(window).resize(function(){
+    collapseLeftContainerClass();
+  });
+  //Fire it when the page first loads:
+  collapseLeftContainerClass();
+});
+
+textScript.value = '<script data-id="autoOptimizescript" data-userid="eyJpdiI6ImEyRTIyaDBcLzl5VkRQWlJFRXJOSk1nPT0iLCJ2YWx1ZSI6Ik10azBJT3pXUWJVUUNQSWNpZER1XC9RPT0iLCJtYWMiOiJjZTVmNzZhNDk0YTU0MmVjNTI3NzZiMTdkZDhiYjBjZmNmOWU4NmIxOGJjNGU3ODE3NDdjZGJlOTlmNmYwYWQ2In0=">  (function(w, d, s, u, au){  var f = d.getElementsByTagName(s)[0],  j = d.createElement(s),  k = '
+  </script>
+</body>
+
+</html>

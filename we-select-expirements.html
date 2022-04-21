@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WE select expirements</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- Bootstrap.css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Fonts.css -->
+  <link rel="stylesheet" href="css/fonts.css">
+  <!-- we.css -->
+  <link rel="stylesheet" href="css/we.css">
+</head>
+
+<body class="we we_select_exp">
+  
+  <!--sidebar-->
+  <nav id="we_nav">
+    <div class="d-flex nav_header px-3 mb-3">
+      <button class="we_navbar_toggler pl-0" type="button" data-toggle="" data-target="" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar top-bar opacity-6 mt-0"></span>
+        <span class="icon-bar middle-bar opacity-6"></span>
+        <span class="icon-bar bottom-bar opacity-6"></span>				
+      </button>
+      <div class="ml-auto d-flex">
+        <button class="btn default-btn transparent d-flex align-items-center gray4 border-0 fs12 generalBtn">
+          <i class="fa fa-floppy-o mr-2" aria-hidden="true"></i>
+          <span style="margin-top: -2px;">Save</span>
+        </button>
+        <button class="btn default-btn transparent d-flex align-items-center gray4 border-0 pr-0 fs12 generalBtn">
+          <i class="fa fa-rocket mr-2" aria-hidden="true"></i>
+          <span style="margin-top: -2px;">Start</span>
+        </button>
+      </div>
+    </div>
+    <div class="nav_content">
+      <div class="px-3 pb-3 nav_title">
+        <div class="w-100 d-flex align-items-center mb-1">
+          <h2 class="fs18"> <a href="we.html" class="mr-1"><i class="fa fa-arrow-left" aria-hidden="true"></i></a> Select experiments</h2>
+        </div>
+        <p class="fs12 gray84 mb-">Pick experiments you would like to run for your project.</p>        
+      </div>
+      <div class="impact px-3 mt-3">
+        <div class="d-flex">
+          <div class="check_impact d-flex fs12">
+            <span class="mr-2 d-flex" style="line-height: 12px;">High impact only</span>
+            <span class="bill">
+              <label class="switch m-0">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </span>
+          </div>
+          <div class="sort_impact ml-auto fs12">
+            <a class="dropdown-toggle grayColor d-flex" href="#" role="button" id="view" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="line-height: 12px;">
+              Sort: Impact
+            </a>
+            <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown" aria-labelledby="view" x-placement="bottom-start" style="position: absolute; transform: translate3d(558px, 137px, 0px); top: 0px; left: 0px; will-change: transform;">
+              <a class="dropdown-item fs12 gray64 border-0" href="#">Change access:</a>
+              <a class="dropdown-item fs12" href="#">Editor</a>
+              <a class="dropdown-item fs12" href="#">Viewer</a>
+            </div>
+          </div>
+        </div>
+        <div class="searchContainer w-100 mb-0 mt-2">
+          <div class="form-group has-search mb-0 position-relative">
+            <span class="fa fa-search form-control-feedback fs13 ml-3 fs12"></span>
+            <input type="text" class="form-control fs12 grayFABgColor" placeholder="Search">
+          </div>
+        </div>
+      </div>
+      <div class="experiments_container">
+        <ul class="list-unstyled mt-2 p-0 experiments_list">
+          <li class="d-flex align-items-center high_impact_element">
+            <div class="chkbox mr-2 chk_all" style="line-height: 0">
+              <label class="mb-0">
+                <input type="checkbox" name="checkbox">
+                <span>
+              </span>
+            </label>                  
+            </div>
+            <h3 class="fs12 align_with_chkbox"> Select all experiments </h3>  
+          </li>
+          <li class="high_impact_element">
+            <div class="d-flex mb-1">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="chkbox mr-2" style="line-height: 0;">
+                  <label class="mb-0">
+                    <input type="checkbox" name="checkbox">
+                    <span>
+                  </span>
+                </label>                  
+                </div>
+                <h3 class="fs12 align_with_chkbox">Different headlines</h3>
+                <a href="#" class="gray4 mx-2" style="line-height: 0;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></a>
+                <div class="perCirc progressPercent" data-percent="60" style="background-image: linear-gradient(126deg, transparent 50%, rgb(1, 122, 255) 50%), linear-gradient(90deg, rgb(231, 232, 234) 50%, transparent 50%);">
+                  <div class="perCircInner">
+                    <div class="perCircStat"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="impact_container">
+              <span class="high_impact"></span>
+              <span class="fs12 gray64">Headline</span>
+            </div>
+            <a href="we-different-headlines.html" class="position-absolute different_items gray4 px-3">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="high_impact_element">
+            <div class="d-flex mb-1">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="chkbox mr-2" style="line-height: 0;">
+                  <label class="mb-0">
+                    <input type="checkbox" name="checkbox">
+                    <span>
+                  </span>
+                </label>                  
+                </div>
+                <h3 class="fs12 align_with_chkbox">Different subheadlines</h3>
+                <a href="#" class="gray4 mx-2" style="line-height: 0;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="impact_container">
+              <span class="high_impact"></span>
+              <span class="fs12 gray64">Subheadline</span>
+            </div>
+            <a href="we-different-headlines.html" class="position-absolute different_items gray4 px-3">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="high_impact_element">
+            <div class="d-flex mb-1">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="chkbox mr-2" style="line-height: 0;">
+                  <label class="mb-0">
+                    <input type="checkbox" name="checkbox">
+                    <span>
+                  </span>
+                </label>                  
+                </div>
+                <h3 class="fs12 align_with_chkbox">Different text for buttons</h3>
+                <a href="#" class="gray4 mx-2" style="line-height: 0;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="impact_container">
+              <span class="high_impact"></span>
+              <span class="fs12 gray64">Signup button</span>
+            </div>
+            <a href="we-different-headlines.html" class="position-absolute different_items gray4 px-3">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="medium_impact_element">
+            <div class="d-flex mb-1">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="chkbox mr-2" style="line-height: 0;">
+                  <label class="mb-0">
+                    <input type="checkbox" name="checkbox">
+                    <span>
+                  </span>
+                </label>                  
+                </div>
+                <h3 class="fs12 align_with_chkbox">Red headline</h3>
+                <a href="#" class="gray4 mx-2" style="line-height: 0;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="impact_container">
+              <span class="high_impact"></span>
+              <span class="fs12 gray64">Headline</span>
+            </div>
+            <a href="we-different-headlines.html" class="position-absolute different_items gray4 px-3">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="medium_impact_element">
+            <div class="d-flex mb-1">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="chkbox mr-2" style="line-height: 0;">
+                  <label class="mb-0">
+                    <input type="checkbox" name="checkbox">
+                    <span>
+                  </span>
+                </label>                  
+                </div>
+                <h3 class="fs12 align_with_chkbox">I wish I could _____ headline</h3>
+                <a href="#" class="gray4 mx-2" style="line-height: 0;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="impact_container">
+              <span class="medium_impact"></span>
+              <span class="fs12 gray64">Headline</span>
+            </div>
+            <a href="we-different-headlines.html" class="position-absolute different_items gray4 px-3">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="medium_impact_element">
+            <div class="d-flex mb-1">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="chkbox mr-2" style="line-height: 0;">
+                  <label class="mb-0">
+                    <input type="checkbox" name="checkbox">
+                    <span>
+                  </span>
+                </label>                  
+                </div>
+                <h3 class="fs12 align_with_chkbox">Big annoying yellow button</h3>
+                <a href="#" class="gray4 mx-2" style="line-height: 0;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="impact_container">
+              <span class="medium_impact"></span>
+              <span class="fs12 gray64">Signup button</span>
+            </div>
+            <a href="we-different-headlines.html" class="position-absolute different_items gray4 px-3">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="medium_impact_element">
+            <div class="d-flex mb-1">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="chkbox mr-2" style="line-height: 0;">
+                  <label class="mb-0">
+                    <input type="checkbox" name="checkbox">
+                    <span>
+                  </span>
+                </label>                  
+                </div>
+                <h3 class="fs12 align_with_chkbox">Add a benefits bar</h3>
+                <a href="#" class="gray4 mx-2" style="line-height: 0;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="impact_container">
+              <span class="medium_impact"></span>
+              <span class="fs12 gray64">Headline</span>
+            </div>
+            <a href="we-different-headlines.html" class="position-absolute different_items gray4 px-3">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="medium_impact_element">
+            <div class="d-flex mb-1">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="chkbox mr-2" style="line-height: 0;">
+                  <label class="mb-0">
+                    <input type="checkbox" name="checkbox">
+                    <span>
+                  </span>
+                </label>                  
+                </div>
+                <h3 class="fs12 align_with_chkbox">Hide everything until videos is watched</h3>
+                <a href="#" class="gray4 mx-2" style="line-height: 0;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="impact_container">
+              <span class="medium_impact"></span>
+              <span class="fs12 gray64">Sales/Demo video</span>
+            </div>
+            <a href="we-different-headlines.html" class="position-absolute different_items gray4 px-3">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="medium_impact_element">
+            <div class="d-flex mb-1">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="chkbox mr-2" style="line-height: 0;">
+                  <label class="mb-0">
+                    <input type="checkbox" name="checkbox">
+                    <span>
+                  </span>
+                </label>                  
+                </div>
+                <h3 class="fs12 align_with_chkbox">Add a call to action button above the video</h3>
+                <a href="#" class="gray4 mx-2" style="line-height: 0;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="impact_container">
+              <span class="medium_impact"></span>
+              <span class="fs12 gray64">Sales/Demo video</span>
+            </div>
+            <a href="we-different-headlines.html" class="position-absolute different_items gray4 px-3">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="medium_impact_element">
+            <div class="d-flex mb-1">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="chkbox mr-2" style="line-height: 0;">
+                  <label class="mb-0">
+                    <input type="checkbox" name="checkbox">
+                    <span>
+                  </span>
+                </label>                  
+                </div>
+                <h3 class="fs12 align_with_chkbox">Different colors for buttons</h3>
+                <a href="#" class="gray4 mx-2" style="line-height: 0;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="impact_container">
+              <span class="medium_impact"></span>
+              <span class="fs12 gray64">Signup button</span>
+            </div>
+            <a href="we-different-headlines.html" class="position-absolute different_items gray4 px-3">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="medium_impact_element">
+            <div class="d-flex mb-1">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="chkbox mr-2" style="line-height: 0;">
+                  <label class="mb-0">
+                    <input type="checkbox" name="checkbox">
+                    <span>
+                  </span>
+                </label>                  
+                </div>
+                <h3 class="fs12 align_with_chkbox">Add “X signups so far” underneath CTA button</h3>
+                <a href="#" class="gray4 mx-2" style="line-height: 0;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="impact_container">
+              <span class="medium_impact"></span>
+              <span class="fs12 gray64">Signup button</span>
+            </div>
+            <a href="we-different-headlines.html" class="position-absolute different_items gray4 px-3">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="medium_impact_element">
+            <div class="d-flex mb-1">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="chkbox mr-2" style="line-height: 0;">
+                  <label class="mb-0">
+                    <input type="checkbox" name="checkbox">
+                    <span>
+                  </span>
+                </label>                  
+                </div>
+                <h3 class="fs12 align_with_chkbox">Add “it’s free” beside signup button</h3>
+                <a href="#" class="gray4 mx-2" style="line-height: 0;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="impact_container">
+              <span class="medium_impact"></span>
+              <span class="fs12 gray64">Signup button</span>
+            </div>
+            <a href="we-different-headlines.html" class="position-absolute different_items gray4 px-3">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="low_impact_element">
+            <div class="d-flex mb-1">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="chkbox mr-2" style="line-height: 0;">
+                  <label class="mb-0">
+                    <input type="checkbox" name="checkbox">
+                    <span>
+                  </span>
+                </label>                  
+                </div>
+                <h3 class="fs12 align_with_chkbox">Animated headline vs static</h3>
+                <a href="#" class="gray4 mx-2" style="line-height: 0;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="impact_container">
+              <span class="low_impact"></span>
+              <span class="fs12 gray64">Headline</span>
+            </div>
+            <a href="we-different-headlines.html" class="position-absolute different_items gray4 px-3">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="low_impact_element">
+            <div class="d-flex mb-1">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="chkbox mr-2" style="line-height: 0;">
+                  <label class="mb-0">
+                    <input type="checkbox" name="checkbox">
+                    <span>
+                  </span>
+                </label>                  
+                </div>
+                <h3 class="fs12 align_with_chkbox">Add wavy underline under headlines</h3>
+                <a href="#" class="gray4 mx-2" style="line-height: 0;"><i class="fa fa-info-circle fs15" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="impact_container">
+              <span class="low_impact"></span>
+              <span class="fs12 gray64">Headline</span>
+            </div>
+            <a href="we-different-headlines.html" class="position-absolute different_items gray4 px-3">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--app content-->
+  <div id="we_content" class="p-1 position-relative leftSpace">
+    website content
+  </div>
+  <!-- jQuery -->
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <!-- Popper.JS -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- custom JS -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

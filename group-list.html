@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Groups</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- Bootstrap.css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Fonts.css -->
+  <link rel="stylesheet" href="css/fonts.css">
+  <!--aos css-->
+  <link rel="stylesheet" href="css/aos.css">
+  <!-- Style.css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+      <!-- Modal -->
+      <div class="modal fade pagesTabModal" id="addPageModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs14">Create New Group</h5>
+              <button type="button" class="close gray4" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="typeUrl mt-2">
+                <label for="url" class="fs12 gray">Group name</label>
+                <input type="text" class="form-control fs12 grayFABgColor p-2 w-100" placeholder="Group name">
+              </div>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+              <button type="button" class="btn btn-primary fs12 blueBtn generalBtn" disabled>Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!--sidebar-->
+  <div id="collapsedNav" class="navbar-collapse offcanvas-collapse grayBg">
+    <div class="logoContainer d-flex grayBg">
+      <!--toggle menu-->
+      <button class="navbar-toggler transparent border-0 collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span id="hamburger"><span></span></span>
+      </button>
+      <!--logo-->
+      <a class="navbar-brand d-flex align-items-center m-0 p-0" href="projects.html">
+        <div class="brandContainer">
+          <svg width="136" height="20" viewBox="0 0 136 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.87251 15.0881C10.0487 15.5727 10.5113 15.859 10.9959 15.859C11.15 15.859 11.3042 15.837 11.4144 15.793C12.0531 15.5507 12.3615 14.8458 12.1412 14.207L7.27338 1.23348C7.07515 0.748898 6.61259 0.440528 6.10598 0.462554C5.6214 0.440528 5.13682 0.748898 4.93858 1.23348L0.0707392 14.207C-0.149525 14.8458 0.158845 15.5507 0.797612 15.793C0.92977 15.837 1.06193 15.859 1.21611 15.859C1.7007 15.859 2.16325 15.5727 2.36149 15.0881L3.44078 12.2247H8.79321L9.87251 15.0881ZM4.32184 9.80176L6.10598 5.06608L7.89012 9.80176H4.32184Z" fill="white" />
+            <path d="M22.6196 11.2775V6.01322C22.6196 5.39648 22.0469 4.84582 21.4302 4.84582C20.7694 4.84582 20.2848 5.39648 20.2848 6.01322V11.2775C20.2628 12.533 19.2496 13.5242 17.972 13.5242C16.7165 13.5242 15.7253 12.533 15.7253 11.2775V6.01322C15.7253 5.39648 15.2187 4.84582 14.5579 4.84582C13.9192 4.84582 13.3905 5.39648 13.3905 6.01322V11.2775C13.3905 13.7885 15.461 15.859 17.972 15.859C20.5051 15.859 22.6196 13.7885 22.6196 11.2775Z" fill="white" />
+            <path d="M29.7404 4.84582H29.1897V1.65198C29.1897 0.969162 28.6611 0.440528 27.9782 0.440528C27.2954 0.440528 26.7448 0.969162 26.7448 1.65198V4.84582H26.106C25.4232 4.84582 24.8945 5.37445 24.8945 6.05727C24.8945 6.71806 25.4232 7.26872 26.106 7.26872H26.7448V13.4141C26.7448 14.7577 27.8461 15.859 29.1897 15.859C29.8725 15.859 30.4011 15.3304 30.4011 14.6476C30.4011 13.9648 29.8725 13.4141 29.1897 13.4141V7.26872H29.7404C30.4011 7.26872 30.9738 6.71806 30.9738 6.05727C30.9738 5.37445 30.4011 4.84582 29.7404 4.84582Z" fill="white" />
+            <path d="M38.2148 15.9251C39.6686 15.9251 40.9902 15.2863 41.8933 14.2511C42.8845 13.2819 43.4351 11.9163 43.4351 10.3745C43.4351 8.87665 42.8845 7.57709 41.8933 6.51982C40.9902 5.48458 39.6686 4.84582 38.2148 4.84582C36.695 4.84582 35.4175 5.48458 34.4263 6.51982C33.4792 7.57709 32.9065 8.87665 32.9065 10.3745C32.9065 11.9163 33.4792 13.2819 34.4263 14.2511C35.4175 15.2863 36.695 15.9251 38.2148 15.9251ZM36.1003 8.0837C36.651 7.59912 37.3778 7.2467 38.2148 7.2467C38.9858 7.2467 39.6906 7.59912 40.2413 8.0837C40.7919 8.67841 41.1003 9.47137 41.1003 10.3745C41.1003 11.3216 40.7919 12.0925 40.2413 12.7093C39.6906 13.2379 38.9858 13.5242 38.2148 13.5242C37.3778 13.5242 36.651 13.2379 36.1003 12.7093C35.5937 12.0925 35.3074 11.3216 35.3074 10.3745C35.3074 9.47137 35.5937 8.67841 36.1003 8.0837Z" fill="white" />
+            <path d="M53.2149 0C51.1003 0 49.162 0.903084 47.8184 2.35683C46.4527 3.81057 45.6378 5.7489 45.6378 7.92952C45.6378 10.1101 46.4527 12.0705 47.8184 13.5022C49.162 14.9339 51.1003 15.859 53.2149 15.859C55.2413 15.859 57.1796 14.9339 58.4792 13.5022C59.8448 12.0705 60.7038 10.1101 60.7038 7.92952C60.7038 5.7489 59.8448 3.81057 58.4792 2.35683C57.1796 0.903084 55.2413 0 53.2149 0ZM56.695 11.7621C55.7699 12.7533 54.5364 13.348 53.2149 13.348C51.8052 13.348 50.5717 12.7533 49.6466 11.7621C48.7215 10.815 48.1488 9.42731 48.1488 7.92952C48.1488 6.43172 48.7215 5.04405 49.6466 4.07489C50.5717 3.0837 51.8052 2.51101 53.2149 2.51101C54.5364 2.51101 55.7699 3.0837 56.695 4.07489C57.5981 5.04405 58.1928 6.43172 58.1928 7.92952C58.1928 9.42731 57.5981 10.815 56.695 11.7621Z" fill="white" />
+            <path d="M64.8582 20C65.5631 20 66.1137 19.4273 66.1137 18.8106V14.9339C66.9067 15.5066 67.964 15.837 69.0653 15.837C71.9948 15.837 74.3957 13.3921 74.3957 10.3745C74.3957 7.35683 71.9948 4.84582 69.0653 4.84582C67.9419 4.84582 66.8847 5.22026 66.0697 5.7489C65.9816 5.26432 65.475 4.84582 64.8582 4.84582C64.2195 4.84582 63.6908 5.37445 63.6908 6.01322V10.3745C63.6908 10.3965 63.6908 10.3965 63.6908 10.3965V18.8106C63.6908 19.4273 64.2195 20 64.8582 20ZM66.9728 8.14978C67.5234 7.55507 68.2503 7.2467 69.0653 7.2467C69.8142 7.2467 70.5631 7.55507 71.1358 8.14978C71.6424 8.72247 71.9948 9.51542 71.9948 10.3745C71.9948 11.2335 71.6424 12.0705 71.1358 12.5771C70.5631 13.1938 69.8142 13.5022 69.0653 13.5022C68.2503 13.5022 67.5234 13.1938 66.9728 12.5771C66.4001 12.0705 66.1137 11.2335 66.1137 10.3745C66.1137 9.51542 66.4001 8.72247 66.9728 8.14978Z" fill="white" />
+            <path d="M80.8529 4.84582H80.3022V1.65198C80.3022 0.969162 79.7736 0.440528 79.0908 0.440528C78.4079 0.440528 77.8573 0.969162 77.8573 1.65198V4.84582H77.2185C76.5357 4.84582 76.007 5.37445 76.007 6.05727C76.007 6.71806 76.5357 7.26872 77.2185 7.26872H77.8573V13.4141C77.8573 14.7577 78.9586 15.859 80.3022 15.859C80.985 15.859 81.5137 15.3304 81.5137 14.6476C81.5137 13.9648 80.985 13.4141 80.3022 13.4141V7.26872H80.8529C81.5137 7.26872 82.0863 6.71806 82.0863 6.05727C82.0863 5.37445 81.5137 4.84582 80.8529 4.84582Z" fill="white" />
+            <path d="M86.0597 4.86784C85.3989 4.86784 84.8703 5.37445 84.8703 6.0793V14.6696C84.8703 15.3304 85.3989 15.859 86.0597 15.859C86.7425 15.859 87.2491 15.3304 87.2491 14.6696V6.0793C87.2491 5.37445 86.7425 4.86784 86.0597 4.86784ZM87.2491 1.62996C87.2491 0.969162 86.7425 0.440528 86.0597 0.440528C85.3989 0.440528 84.8703 0.969162 84.8703 1.62996V2.09251C84.8703 2.7533 85.3989 3.30396 86.0597 3.30396C86.7425 3.30396 87.2491 2.7533 87.2491 2.09251V1.62996Z" fill="white" />
+            <path d="M101.44 7.20264C102.651 7.20264 103.664 8.21586 103.664 9.47137V14.6916C103.664 15.3304 104.215 15.859 104.854 15.859C105.493 15.859 106.021 15.3304 106.021 14.6916V9.47137C106.021 6.9163 103.973 4.84582 101.44 4.84582C100.052 4.84582 98.7965 5.4185 97.9815 6.36564C97.1445 5.4185 95.911 4.84582 94.5234 4.84582C93.6864 4.84582 92.8714 5.08811 92.1665 5.50661C91.9903 5.08811 91.5718 4.84582 91.1093 4.84582C90.4705 4.84582 89.9419 5.35242 89.9419 6.03524V9.44934C89.9419 9.44934 89.9419 9.44934 89.9419 9.47137V14.6916C89.9419 15.2643 90.3604 15.7048 90.889 15.837C90.9551 15.837 91.0212 15.859 91.1093 15.859C91.5718 15.859 92.0124 15.5507 92.2106 15.1542C92.2106 15.1101 92.2106 15.0661 92.2106 15.0441C92.2547 15 92.2546 14.9559 92.2767 14.9119C92.2767 14.9119 92.2767 14.8678 92.2767 14.8458C92.2767 14.8018 92.2987 14.7357 92.2987 14.6916V9.47137C92.2987 8.21586 93.3119 7.20264 94.5234 7.20264C95.7569 7.20264 96.7701 8.19383 96.7921 9.40529C96.7921 9.42731 96.7921 9.44934 96.7921 9.47137V14.6916C96.7921 15.3304 97.3648 15.859 97.9815 15.859C98.6203 15.859 99.1489 15.3304 99.1489 14.6916V9.47137C99.1489 9.44934 99.1489 9.42731 99.1489 9.40529C99.193 8.19383 100.184 7.20264 101.44 7.20264Z" fill="white" />
+            <path d="M111.003 4.86784C110.342 4.86784 109.813 5.37445 109.813 6.0793V14.6696C109.813 15.3304 110.342 15.859 111.003 15.859C111.686 15.859 112.192 15.3304 112.192 14.6696V6.0793C112.192 5.37445 111.686 4.86784 111.003 4.86784ZM112.192 1.62996C112.192 0.969162 111.686 0.440528 111.003 0.440528C110.342 0.440528 109.813 0.969162 109.813 1.62996V2.09251C109.813 2.7533 110.342 3.30396 111.003 3.30396C111.686 3.30396 112.192 2.7533 112.192 2.09251V1.62996Z" fill="white" />
+            <path d="M122.638 6.67401C122.682 6.65198 122.704 6.60793 122.749 6.56388C122.749 6.51982 122.749 6.4978 122.749 6.4978C122.793 6.47577 122.815 6.43172 122.815 6.38767C122.837 6.34361 122.837 6.29956 122.837 6.27753C122.859 6.23348 122.859 6.21145 122.859 6.14537C122.859 6.14537 122.859 6.0793 122.881 6.03524V6.01322C122.881 5.99119 122.859 5.94714 122.859 5.92511C122.859 5.88106 122.859 5.837 122.859 5.79295C122.837 5.77093 122.837 5.72687 122.815 5.68282C122.815 5.63877 122.815 5.59471 122.793 5.57269C122.793 5.52863 122.749 5.50661 122.749 5.44053C122.704 5.44053 122.704 5.4185 122.682 5.39648C122.66 5.37445 122.638 5.35242 122.616 5.30837C122.594 5.28634 122.572 5.24229 122.55 5.24229C122.506 5.17621 122.462 5.15418 122.44 5.13216C122.44 5.11013 122.418 5.08811 122.396 5.08811C122.396 5.08811 122.396 5.06608 122.374 5.06608C122.33 5.04405 122.286 5 122.242 5C122.22 5 122.198 4.95595 122.176 4.93392C122.154 4.93392 122.11 4.91189 122.066 4.91189C122.044 4.88987 122 4.88987 121.956 4.86784C121.912 4.86784 121.912 4.86784 121.845 4.86784C121.801 4.86784 121.757 4.84582 121.713 4.84582H115.348C114.731 4.84582 114.18 5.37445 114.18 6.01322C114.18 6.67401 114.731 7.18062 115.348 7.18062H119.378L114.423 14.0308C114.423 14.0308 114.423 14.0308 114.401 14.0308C114.378 14.0529 114.334 14.0969 114.334 14.141C114.334 14.141 114.29 14.207 114.268 14.207C114.268 14.2291 114.246 14.2731 114.246 14.3172C114.224 14.3612 114.224 14.4053 114.202 14.4273C114.202 14.4714 114.202 14.4934 114.202 14.5154C114.202 14.5595 114.18 14.6256 114.18 14.6696C114.18 14.6916 114.18 14.6916 114.18 14.6916C114.18 14.7137 114.18 14.7357 114.202 14.7577C114.202 14.8018 114.202 14.8678 114.202 14.9119C114.202 14.9339 114.224 14.978 114.224 15C114.246 15.0661 114.246 15.1101 114.268 15.1101C114.268 15.1762 114.29 15.1982 114.334 15.2203C114.334 15.2643 114.334 15.2863 114.378 15.3084C114.401 15.3304 114.423 15.3524 114.445 15.3965C114.467 15.4185 114.489 15.4405 114.533 15.5066C114.533 15.5066 114.599 15.5507 114.621 15.5727C114.643 15.5947 114.665 15.6167 114.687 15.6167C114.687 15.6388 114.687 15.6388 114.709 15.6388C114.709 15.6608 114.731 15.6608 114.753 15.7048C114.775 15.7048 114.819 15.7489 114.841 15.7489C114.863 15.7709 114.885 15.7709 114.929 15.793C114.973 15.793 115.017 15.815 115.061 15.837C115.083 15.837 115.105 15.837 115.127 15.837C115.215 15.859 115.282 15.859 115.348 15.859H121.713C122.33 15.859 122.881 15.3304 122.881 14.6916C122.881 14.0308 122.33 13.5242 121.713 13.5242H117.66L122.638 6.69604C122.638 6.67401 122.638 6.67401 122.638 6.67401Z" fill="white" />
+            <path d="M130.261 15.859C131.825 15.859 133.124 15.3965 134.204 14.4053C134.71 13.9427 134.49 13.2819 134.204 12.9736C133.917 12.6211 133.014 12.5551 132.552 13.0396C132.001 13.4582 131.054 13.6564 130.261 13.5903C129.49 13.5242 128.609 13.1278 128.146 12.5991C127.75 12.2247 127.508 11.652 127.397 11.1454H134.402C135.019 11.1454 135.481 10.793 135.547 10.2643C135.569 10.2203 135.569 10.1101 135.569 10.0661C135.569 10.022 135.569 9.97797 135.569 9.95595C135.393 6.98238 133.124 4.84582 130.261 4.84582C127.243 4.84582 124.909 7.35683 124.886 10.3524C124.909 13.348 127.243 15.837 130.261 15.859ZM130.261 6.93833C132.177 7.09251 133.301 8.39207 133.521 9.27313H127.287C127.464 8.37004 128.389 7.02643 130.261 6.93833Z" fill="white" />
+          </svg>
+        </div>
+      </a>
+    </div>
+    <ul class="navbar-nav w-100 p-0 mt-3">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="18" height="18" rx="5" stroke="white" stroke-width="2" />
+          </svg>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="18" height="18" rx="5" stroke="white" stroke-width="2" />
+          </svg>
+          <span class="gray84"an>Projects</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="18" height="18" rx="5" stroke="white" stroke-width="2" />
+          </svg>
+          <span>Reports</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="18" height="18" rx="5" stroke="white" stroke-width="2" />
+          </svg>
+          <span>Settings</span>
+        </a>
+      </li>
+      <li class="nav-item mb-0">
+        <a class="nav-link nav-link-collapse active" href="#" id="hasSubItems" data-toggle="collapse" data-target="#collapseSubItems" aria-controls="collapseSubItems" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="18" height="18" rx="5" stroke="white" stroke-width="2" />
+          </svg>
+          <span>Groups</span>
+        </a>
+        <!--submenu-->
+        <ul class="nav-second-level collapse" id="collapseSubItems" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Candor Corp</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Vortex Solar</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Bonefete Fun</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link border-bottom-0" href="#">
+              <span class="nav-link-text">Quad Goals</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!--log out-->
+    <ul class="navbar-nav logOut w-100 mb-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="18" height="18" rx="5" stroke="white" stroke-width="2" />
+          </svg>
+          <span>Log Out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!--app content-->
+  <div id="content" class="app px-3 px-sm-4 py-3 position-relative leftSpace">
+    <!--nav container-->
+    <div id="navContainer" class="bg-white d-flex fixed-top leftNavSpace">
+      <!--right nav-->
+      <nav class="navbar w-100 py-0 px-4 rightNav bg-white">
+        <!--mobile toggle menu-->
+        <button class="navbar-toggler transparent border-0 collapsed mr-3 d-md-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="hamburger"><span></span></span>
+        </button>
+        <div class="mainTitle leftNavSide">
+          <i class="fa fa-file-text-o fs22 d-md-block d-none" aria-hidden="true"></i>
+          <h2 class="fs18 fsSm12"><span>Groups</span></h2>
+        </div>
+        <div class="ml-auto rightNavSide mail">
+          <!--mobile dropdown menu-->
+          <div class="dropdown d-md-none">
+            <button class="btn p-0 transparent" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-menu px-2" aria-labelledby="dropdownMenu2">
+              <i class="fa fa-bell-o fs13 fw600" aria-hidden="true"></i>
+              <span class="fs12 ml-3 mr-1">johndoe@mail.com</span>
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="mailContainer d-none d-md-block">
+            <i class="fa fa-bell-o fs13 fw600" aria-hidden="true"></i>
+            <span class="fs12 ml-3 mr-1">johndoe@mail.com</span>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--projcts number-->
+    <div class="projectsNumbre justify-content-start mb-3" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
+      <h2 class="fs18 fsSm12"><span class="number mr-1">5</span> Groups</h2>
+      <button class="btn default-btn transparent d-flex align-items-center fs12 blue ffLight blueBtn generalBtn ml-auto ml-md-0 noSmBorder noSmPadding" data-toggle="modal" data-target="#addPageModal">
+        <span class="fs22 plusSpan mr-1" style="margin-top: -19px;">+</span>
+        <span style="margin-top: -2px;">Create</span>
+      </button>
+    </div>
+    <!--search bar-->
+    <div class="searchContainer">
+      <div class="form-group has-search mb-0 position-relative">
+        <span class="fa fa-search form-control-feedback fs13 ml-3 fs12"></span>
+        <input type="text" class="form-control fs12" placeholder="Search">
+      </div>
+    </div>
+    <section>
+      <div class="mainTable w-100 groupsTable borderdMailTable mt-2" data-aos="fade-up" data-aos-once="true" data-aos-delay="400">
+        <table class="col-md-12 p-0">
+        <tbody>
+          <tr>
+            <td>
+              <p>Candor Corp</p>
+              <span class="gray84">2 projects</span>
+            </td>
+            <td>
+              <div class="d-flex">
+                <span class="avatar avatarSmall">JD</span>
+                <span class="avatar avatarSmall">JD</span>
+              </div>  
+            </td>
+            <td>
+              <button class="btn default-btn transparent border-0 fs12 p-0" id="sett" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+              <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown" aria-labelledby="sett">
+                <a class="dropdown-item fs12" href="#">Transfer ownership</a>
+                <a class="dropdown-item fs12" href="#">Delete user</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Vortex Solar</p>
+              <span class="gray84">1 projects</span>
+            </td>
+            <td>
+              <div class="d-flex">
+                <span class="avatar avatarSmall">JD</span>
+                <span class="avatar avatarSmall">JD</span>
+                <span class="avatar avatarSmall">JD</span>
+                <span class="avatar avatarSmall">JD</span>
+                <span class="avatar avatarSmall">JD</span>
+              </div>              
+            </td>
+            <td>
+              <button class="btn default-btn transparent border-0 fs12 p-0" id="sett" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+              <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown" aria-labelledby="sett" x-placement="bottom-start" style="position: absolute; transform: translate3d(796px, 139px, 0px); top: 0px; left: 0px; will-change: transform;">
+                <a class="dropdown-item fs12" href="#">Transfer ownership</a>
+                <a class="dropdown-item fs12" href="#">Delete user</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Bonefete Fun</p>
+              <span class="gray84">5 projects</span>
+            </td>
+            <td>
+              <div class="d-flex">
+                <span class="avatar avatarSmall">JD</span>
+                <span class="avatar avatarSmall">JD</span>
+                <span class="avatar avatarSmall">JD</span>
+                <span class="avatar avatarSmall">JD</span>
+                <span class="avatar avatarSmall">JD</span>
+                <span class="avatar avatarSmall">JD</span>
+                <span class="avatar avatarSmall">JD</span>
+                <span class="avatar avatarSmall">JD</span>
+                <span class="avatar avatarSmall">JD</span>
+              </div>    
+            </td>
+            <td>
+              <button class="btn default-btn transparent border-0 fs12 p-0" id="sett" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+              <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown" aria-labelledby="sett">
+                <a class="dropdown-item fs12" href="#">Transfer ownership</a>
+                <a class="dropdown-item fs12" href="#">Delete user</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Quad Goals</p>
+              <span class="gray84">6 projects</span>
+            </td>
+            <td>
+              <div class="d-flex">
+                <span class="avatar avatarSmall">JD</span>
+                <span class="avatar avatarSmall">JD</span>                
+              </div>
+            </td>
+            <td>
+              <button class="btn default-btn transparent border-0 fs12 p-0" id="sett" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+              <div class="dropdown-menu m-0 p-0 border-0 editViewDropDown" aria-labelledby="sett">
+                <a class="dropdown-item fs12" href="#">Transfer ownership</a>
+                <a class="dropdown-item fs12" href="#">Delete user</a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+  </div>
+  <!-- jQuery -->
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <!-- Popper.JS -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!--aos plugin-->
+  <script src="js/aos.js"></script>
+  <!-- custom JS -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
